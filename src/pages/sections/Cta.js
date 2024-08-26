@@ -7,7 +7,7 @@ function Cta() {
                 <h1 style={{ fontSize: "35px" }}>Interested?</h1>
                 <h1 style={{ textAlign: "center", marginBottom: "25px", color: "#2174ea", fontFamily: "Playfair Display, serif", fontSize: "50px" }}>Sign up to stay updated about Subscription Launch!</h1>
                 <p>We are actively seeking to partner with leading online service providers across various industries. By joining us, you'll boost our productivity and speed.</p>
-                <Link to={`${process.env.REACT_APP_USER}/`}><button>Start now</button></Link>
+                <Link to="/account"><button>Start now</button></Link>
             </div>
         </div>
     );

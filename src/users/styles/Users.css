@@ -1,0 +1,280 @@
+.user {
+    width: 100%;
+    min-height: calc(100vh - 170px);
+    align-items: center;
+    float: left;
+}
+  
+.user .page_width {
+    max-width: 1400px;
+    min-width: 390px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+  
+.user .page_width h1 {
+    font-size: 45px;
+    color: #334155;
+}
+
+.user .page_width .left, 
+.user .page_width .right {
+    margin: 20px 0;
+    float: left;
+    text-align: center;
+    align-items: center;
+    min-height: 500px;
+    margin-top: 150px;
+    width: 50%;
+}
+  
+.user .page_width .left {
+    border-right: 1px solid #94a3b8;
+    width: calc(50% - 2px);
+}
+  
+.user .page_width .left h2, 
+.user .page_width .right h2 {
+    font-size: 2.2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+    text-align: start;
+    color: #334155;
+}
+  
+.user .page_width p, 
+.user .page_width p {
+    font-size: 1.5rem;
+    text-align: start;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #94a3b8;
+}
+  
+.user .page_width .right .details {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #334155;
+    font-size: 18px;
+    font-weight: 500;
+}
+  
+@media only screen and (max-width: 900px) {
+    .user .page_width .left, 
+    .user .page_width .right {
+        width: 100%;
+    }
+  
+    .user .page_width .left {
+        border: 0;
+        border-bottom: 1px solid #94a3b8;
+    }
+  
+    .user .page_width .right {
+        margin-bottom: 100px;
+    }
+  
+    .user .page_width .left h2, 
+    .user .page_width .right h2 {
+        width: 80%;
+    }
+      
+    .user .page_width .left p,  
+    .user .page_width .right p {
+        width: 80%;
+    }
+}
+  
+.user .form {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    padding-bottom: 25px;
+    margin: 50px auto;
+    min-height: 100px;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+  
+.user .form h1 {
+    width: 100%;
+    text-align: center;
+    color: #334155;
+    font-size: 40px;
+    margin-top: 0px;
+    align-items: center;
+}
+  
+.user .form .input-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+  
+.user .form input[type="text"],
+.user .form input[type="password"],
+.user .form input[type="number"] {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #1e293b;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    transition: border-bottom-color 0.3s, box-shadow 0.3s;
+}
+  
+.user .form input[type="text"]:focus,
+.user .form input[type="password"]:focus,
+.user .form input[type="number"]:focus {
+    outline: none;
+    border-bottom-color: #ff7f50;
+}
+  
+.user .form label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+   
+.user .form input[type="text"]:focus + label,
+.user .form input[type="text"]:valid + label,
+.user .form input[type="text"]:-webkit-autofill + label,
+.user .form input[type="password"]:focus + label,
+.user .form input[type="password"]:valid + label,
+.user .form input[type="password"]:-webkit-autofill + label,
+.user .form input[type="number"]:focus + label,
+.user .form input[type="number"]:valid + label,
+.user .form input[type="number"]:-webkit-autofill + label {
+    top: -20px;
+    font-size: 12px;
+    color: #1e293b;
+}
+  
+.user .form input::-webkit-outer-spin-button,
+.user .form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+.user .form .textarea-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+  
+.user .form textarea {
+    width: 300px;
+    height: 150px; /* Adjust height as needed */
+    padding: 15px;
+    border: 2px solid #1e293b;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    resize: none; /* Prevent resizing */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+  
+.user .form textarea:focus {
+    outline: none;
+    border-color: #ff7f50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user .form label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+  
+.user .form textarea:focus + label,
+.user .form textarea:valid + label,
+.user .form textarea:-webkit-autofill + label {
+    top: -20px;
+    font-size: 12px;
+    color: #1e293b;
+}
+  
+.user .form span {
+    font-size: 17px;
+    color: #1e293b;
+    padding: 1px 0;
+    cursor: pointer;
+}
+  
+.user .form span:hover {
+    border-bottom: 1px solid #1e293b;
+}
+  
+.user .form button {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    height: 45px;
+    background-color: #2174ea;
+    color: #ffffff;
+    border: #2174ea;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+    line-height: 45px;
+    letter-spacing: 0.55px;
+    padding: 0 20px;
+}
+  
+.user .form button:hover {
+    background-color: #005de2;
+}
+
+
+/* Alert.css */
+.alert {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    z-index: 1000;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+  
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}

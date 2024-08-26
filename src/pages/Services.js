@@ -13,11 +13,11 @@ function Partners() {
           cards={[
             {
               h1: "AI Tools",
-              url: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=270&h=180&dpr=1"
+              url: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=270&h=180&dpr=1"
             },
             {
-              h1: "Data Research",
-              url: "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=270&h=180&dpr=1"
+              h1: "Online Editors",
+              url: "https://images.pexels.com/photos/17136623/pexels-photo-17136623/free-photo-of-a-computer-and-modern-devices-on-the-desk.jpeg?auto=compress&cs=tinysrgb&w=270&h=180&dpr=1"
             },
             {
               h1: "Entertainment",
@@ -28,7 +28,7 @@ function Partners() {
             <p>• <b>Creative Platforms:</b> Industry leaders in graphic design, video editing, and music production.</p>
             <p>• <b>Educational Services:</b> Renowned online learning platforms, digital libraries, and academic resources.</p>
             <p>• <b>Productivity Providers:</b> Top project management tools, office software, and cloud services.</p>
-            <p>• <b>Market Research Firms:</b> Cutting-edge data analysis, survey tools, and market intelligence platforms.</p>
+            <p>• <b>Data Research Firms:</b> Cutting-edge data analysis, survey tools, and market intelligence platforms.</p>
             <p>• <b>Media and entertainment:</b> Media channels, music applications, and streaming portals.</p>
             <h2>Stay Updated</h2>
             <p>While we finalize our partnerships, we invite you to stay updated with our progress. Sign up for our newsletter to receive the latest news on our partner additions and be the first to know when new services become available.</p>

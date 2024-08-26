@@ -28,7 +28,7 @@ function Pricing({ more }) {
     return (
         <div className="pricing">
             <div className="page_width">
-                <h1>Find the right plan for your business</h1>
+                <h1>Find the right plan for your creativity</h1>
                 {isMobile ? "" :
                     <p>Explore our variety of plans designed to cater to different needs and budgets. Choose the one that aligns best with your goals.
                         {(more) ? <></> : <> To see more plans check our <Link to="/pricing" style={{ color: '#94a3b8' }} onClick={() => window.scrollTo(0, 0)}>Pricing</Link> page.</>}</p>}
@@ -55,7 +55,7 @@ function Pricing({ more }) {
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Update your access after 23:59</p>
-                        <Link to={`${process.env.REACT_APP_USER}/`}>
+                        <Link to="/account">
                             <button style={{ marginTop: '69px' }}>Sign up</button>
                         </Link>
                     </div>
@@ -85,7 +85,7 @@ function Pricing({ more }) {
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Update your access after 23:59</p>
-                        <Link to={`${process.env.REACT_APP_USER}/`}>
+                        <Link to="/account">
                             <button style={{ marginTop: '98px' }}>Sign up</button>
                         </Link>
                     </div>
@@ -125,7 +125,7 @@ function Pricing({ more }) {
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Update your access after 23:59</p>
-                        <Link to={`${process.env.REACT_APP_USER}/`}>
+                        <Link to="/account">
                             <button>Sign up</button>
                         </Link>
                     </div>
@@ -141,41 +141,41 @@ function Pricing({ more }) {
                             <span className="symbol">$</span><span className='number'>{floatToIntIfDecimal(price("Pro", 30))}</span><span className="month">/mo</span>
                         </div>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Eight accesses for S services</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Four accesses for M services</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Two accesses for L services</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             One access for XL services</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Various tools everyday</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Mix between tiers</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Update your access after 23:59</p>
-                        <Link to={`${process.env.REACT_APP_USER}/`}>
+                        <Link to="/account">
                             <button style={{ marginTop: '63px' }}>Sign up</button>
                         </Link>
                     </div>
@@ -186,46 +186,46 @@ function Pricing({ more }) {
                             <span className="symbol">$</span><span className='number'>{floatToIntIfDecimal(price("Elite", 30))}</span><span className="month">/mo</span>
                         </div>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Thirteen accesses for S services</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Six accesses for M services</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Three accesses for L services</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             One access for XL services</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             One access for XXL services</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Various tools everyday</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Mix between tiers</p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                             </svg>
                             Update your access after 23:59</p>
-                        <Link to={`${process.env.REACT_APP_USER}/`}>
+                        <Link to="/account">
                             <button>Sign up</button>
                         </Link>
                     </div>
@@ -235,7 +235,7 @@ function Pricing({ more }) {
                         <div className="price">
                             <span className="symbol">$</span><span className='number'>{floatToIntIfDecimal(price(subscription, days, amount))}</span>
                         </div>
-                        <p style={{ paddingBottom: '10px', borderBottom: '1px solid #64748b' }}>{/*Flexible subscription for everyone.*/} Works on first Monday of each month. Try any options with our Custom subscription plan.</p>
+                        <p style={{ paddingBottom: '10px', borderBottom: '1px solid #64748b' }}>{/*Flexible subscription for everyone.*/} Works in every Monday. Try any options with our Custom subscription plan.</p>
                         <p>Number of days: (min 5, max 90)</p>
                         <input type="number" onChange={(e) => setDays(`${e.target.value}`)} value={days}/>
                         <p>OneSubs plan:</p>
@@ -249,7 +249,7 @@ function Pricing({ more }) {
                         <p>Amount: (max 3)</p>
                         <input type="number" onChange={(e) => setAmount(`${e.target.value}`)} value={amount}/>
                         
-                        <Link to={`${process.env.REACT_APP_USER}/`}>
+                        <Link to="/account">
                             <button style={{ marginTop: '19px' }}>Sign up</button>
                         </Link>
                         <p>Ends on {months[date(days).getMonth()]} {date(days).getDate()} at 23:59</p>

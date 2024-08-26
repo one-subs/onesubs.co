@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../styles/images/logo_blue.svg';
+import { ReactComponent as Logo } from '../../styles/images/logo_blue.svg';
+import AuthContext from "../../context/AuthContext";
 
 function Navigation() {
 
     const [display, setDisplay] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+
+    const auth = useContext(AuthContext);
 
     useEffect(() => {
         const handleResize = () => {
@@ -34,7 +37,7 @@ function Navigation() {
             <Link to="/services"><span>Services</span></Link>
             <Link to="/pricing"><span>Pricing</span></Link>
             <Link to="/business"><span>Business</span></Link>
-            <Link to="/account"><span>Account</span></Link>
+            <Link to="/"><span onClick={() => auth.logout()}>Log out</span></Link>
         </div>
     );
 
@@ -47,7 +50,10 @@ function Navigation() {
                 <Link to="/business"><span onClick={() => setDisplay(false)}>Business</span></Link>
             </div>
             <div className="pages">
-                <Link to="/account"><span onClick={() => setDisplay(false)}>Account</span></Link>
+                <Link to="/"><span onClick={() => {
+                    setDisplay(false)
+                    auth.logout()
+                }}>Log out</span></Link>
                 <Link to="/contact"><span onClick={() => setDisplay(false)}>Contact</span></Link>
                 <Link to="/about-us"><span onClick={() => setDisplay(false)}>About us</span></Link>
                 <Link to="/terms-of-use"><span onClick={() => setDisplay(false)}>Terms of use</span></Link>

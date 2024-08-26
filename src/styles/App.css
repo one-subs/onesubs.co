@@ -1,11 +1,10 @@
 /** Landing style */
-
 .landing_page {
   float: left;
   text-align: center;
   background-color: #101d2d;
   width: 100%;
-  margin-bottom: 120px;
+  margin-bottom: 110px;
   padding-bottom: 50px;
 }
 
@@ -27,7 +26,7 @@
 .landing_page .page_width .wellcome {
   float: left;
   text-align: center;
-  min-height: 80vh;
+  min-height: 70vh;
   width: 50%;
 }
 
@@ -117,7 +116,7 @@
   animation-fill-mode: forwards;
 }
 
-  .landing_page .page_width .wellcome .card {
+.landing_page .page_width .wellcome .card {
   width: 300px;
   margin: auto;
   padding: 15px 25px;
@@ -369,15 +368,6 @@
   padding-bottom: 20px;
 }
 
-.services .page_width h1 {
-  font-size: 45px;
-  color: #101d2d;
-  text-align: start;
-  width: 80%;
-  margin: auto;
-  margin-top: 40px;
-}
-
 .services .page_width .card_list {
   width: 100%;
   max-width: 1100px;
@@ -390,49 +380,16 @@
 .services .page_width .card_list .card {
   width: 270px;
   margin: 0 auto;
-  min-height: 200px; /* 340px; */
+  min-height: 200px;
   padding: 15px;
   margin-bottom: 10px;
-  /* cursor: pointer; */
 }
-
-/* .services .page_width .card_list .card:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-} */
 
 .services .page_width .card_list .card h2 {
   margin: 20px 0 10px 0;
   font-size: 22px;
   color: #101d2d;
   font-weight: 500;
-}
-
-.services .page_width .card_list .card p {
-  font-size: 1rem;
-  text-align: start;
-  width: 95%;
-  margin: auto;
-  margin-bottom: 10px;
-  color: #64748b;
-}
-
-.services .page_width button {
-    margin: auto;
-    margin-top: 20px;
-    height: 45px;
-    background-color: #2174ea;
-    color: #ffffff;
-    border: #2174ea;
-    cursor: pointer;
-    font-size: 17px;
-    text-align: center;
-    line-height: 45px;
-    letter-spacing: 0.55px;
-    padding: 0 20px;
-}
-
-.services .page_width button:hover {
-  background-color: #005de2;
 }
 
 @media only screen and (max-width: 600px) {
@@ -773,6 +730,26 @@
   float: left;
 }
 
+.document h1, .document h2, .document h3, .document h4 {
+  max-width: 1000px;
+  font-size: 27px;
+  color: #334155;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.document h2 {
+  font-size: 25px;
+}
+
+.document h3 {
+  font-size: 23px;
+}
+
+.document h3 {
+  font-size: 21px;
+}
+
 .document .banner {
   width: 100%;
   min-height: 150px;
@@ -791,15 +768,15 @@
   margin-bottom: 25px;
 }
 
-.document h2 {
+.document p {
   max-width: 1000px;
-  font-size: 25px;
+  font-size: 20px;
   color: #334155;
   margin: auto;
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
-.document p {
+.document li {
   max-width: 1000px;
   font-size: 20px;
   color: #334155;
