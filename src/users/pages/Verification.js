@@ -1,11 +1,16 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext } from 'react';
 import { useNavigate } from "react-router-dom";
+
+import AuthContext from "../../context/AuthContext";
 import useHttp from "../../hooks/http.hook.js";
+
 import Alert from "./components/Alert.js";
+
 import { ReactComponent as Mail } from '../styles/images/mail.svg';
 
 function Verification() {
 
+  const auth = useContext(AuthContext);
   const { request, error, clearError } = useHttp();
 
   const navigate = useNavigate();
@@ -19,7 +24,10 @@ function Verification() {
     e.preventDefault();
     try {
       const response = await request("/user/verification", "POST", { email, verification, password });
-      if (response) navigate("/account/login");
+      if (response) {
+        auth.login(response.token, response.userId);
+        navigate("/account");
+      };
     } catch (err) {}
   }
 

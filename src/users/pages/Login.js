@@ -1,8 +1,10 @@
-import { Link, useNavigate } from 'react-router-dom';
-import { GoogleLogin } from '@react-oauth/google';
 import { useState, /*useRef,*/ useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+
+import { GoogleLogin } from '@react-oauth/google';
 import AuthContext from "../../context/AuthContext";
 import useHttp from "../../hooks/http.hook";
+
 import Alert from "./components/Alert.js";
 import { ReactComponent as LoginImage } from '../styles/images/login.svg';
 

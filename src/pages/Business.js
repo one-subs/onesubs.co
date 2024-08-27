@@ -1,10 +1,57 @@
 import React, { useState, useEffect } from 'react';
 import { ReactComponent as Collab } from '../styles/images/collab.svg';
 import { ReactComponent as Partner } from '../styles/images/partner.svg';
-import { ReactComponent as Tools } from '../styles/images/tools.svg';
 import { ReactComponent as Earnings } from '../styles/images/earnings.svg';
+import { ReactComponent as Logo } from '../styles/images/logo_blue.svg';
 import { Link } from 'react-router-dom';
 
+const onesubs = () => {
+    return <div className="inputs">
+        <Link to={process.env.REACT_APP_ONESUBS} onClick={() => window.scrollTo(0, 0)}><Logo style={{ maxWidth: '140px', maxHeight: '50px' }}/></Link>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>
+            Access until 23:59</p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>
+            Unlimited Content Access</p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>
+            Ad-Free Experience</p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>
+            Priority Customer Support</p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>
+            Multiple Device Streaming</p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>
+            Exclusive Early Access</p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>
+            Special Discounts and Offers</p>
+        <p style={{ marginBottom: "30px" }}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>
+            Customizable Profiles</p>
+        <input type="text" placeholder="Code"/>
+        <button>Start</button>
+    </div>
+}
 
 function Business() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
@@ -27,17 +74,17 @@ function Business() {
     ];
 
     const sectionTwo = [
-        <Tools style={{ marginTop: '50px', maxWidth: '350px', maxHeight: '310px' }}/>,
+        onesubs(),
         <>
-            <h2>How do people use your tool?</h2>
-            <p>User enters a validation code in your pricing page. If user has the subscription, you will give an access until midnight.</p>
+            <h2>How do people use your tool via OneSubs?</h2>
+            <p>In your pricing page, you will have the OneSubs option as following. User enters a one time code there (e.g., "5T423R"). If user has the subscription, you will give an access until midnight.</p>
         </>
     ];
 
     const sectionThree = [
         <Collab style={{ marginTop: '50px', maxWidth: '350px', maxHeight: '310px' }}/>,
         <>
-            <h2>How to inegrate with us?</h2>
+            <h2>How to inegrate OneSubs?</h2>
             <p>We will share you an API that checks user access code. You have to imlement verification process into your web service. When API approves the user, you will give an access by 23:59 from user's time.</p>
         </>
     ];
@@ -45,7 +92,7 @@ function Business() {
     const sectionFour = [
         <Earnings style={{ marginTop: '70px', maxWidth: '350px', maxHeight: '310px' }}/>,
         <>
-            <h2>How much you will get for your users?</h2>
+            <h2>How much you will earn?</h2>
             <p>You will set the original price of your service. OneSubs designed to be flexible for partners and users. We will indicate your income and transfer money to your bank account in the end of each month.</p>
         </>
     ];
@@ -125,7 +172,8 @@ function Business() {
                     <h1 style={{ fontSize: "35px", color: "#2174ea" }}>Ready to join us?</h1>
                     <h1 style={{ textAlign: "center", marginBottom: "25px" }}>The smarter way to start making <span style={{color: "#10b981"}}>money</span>.</h1>
                     <p>To expand our offerings, we're looking for partners with similar services. This will allow us to provide our users with a comprehensive suite of related tools that can meet all their needs with a single subscription.</p>
-                    <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button style={{ backgroundColor: "#2174ea" }}>Start now</button></Link>
+                    <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button style={{ marginRight: "20px", backgroundColor: "#2174ea" }}>Start now</button></Link>
+                    <Link to="/business-requirements"><button onClick={() => window.scrollTo(0, 0)}>More info</button></Link>
                 </div>
             </div>
         </>

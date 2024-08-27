@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactComponent as AllInOne } from '../../styles/images/all_in_one.svg';
 import { ReactComponent as Verify } from '../../styles/images/verify.svg';
-import { ReactComponent as Partner } from '../../styles/images/tools.svg';
+import { ReactComponent as Partner } from '../../styles/images/premium.svg';
 
 function Description() {
 
@@ -24,7 +24,7 @@ function Description() {
     const sectionThree = [
         <>
             <h2>Premium Services</h2>
-            <p>Our partners are online services such as AI instruments, Market research tools, Video or Photo editors. To access their premium tools, we offer you single subscription.</p>
+            <p>Our partners are online services such as AI instruments, Data research tools, or Online editors. To access their premium tools, we offer you single subscription.</p>
         </>,
         <Partner style={{ marginTop: '50px', maxWidth: '350px', maxHeight: '310px' }}/>
     ];

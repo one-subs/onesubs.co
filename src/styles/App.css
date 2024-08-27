@@ -286,6 +286,61 @@
     }
 }
 
+.description .page_width .right .inputs {
+  width: 350px;
+  min-height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px 0px;
+}
+
+.description .page_width .right .inputs h2 {
+  margin-left: 10%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #2174ea;
+  font-family: "Book Antiqua", Palatino, serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.description .page_width .right .inputs input[type=text] {
+  width: calc(50% - 20px);
+  height: 35px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #94a3b8;
+  border-right: none;
+}
+
+.description .page_width .right .inputs button {
+  width: 30%;
+  height: 37px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #334155;
+  background-color: #334155;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.description .page_width .right .inputs p {
+  font-size: 1.1rem;
+  text-align: start;
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 10px;
+  color: #64748b;
+}
+
+
 /** Business style */
 
 .business_background {

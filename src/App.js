@@ -15,6 +15,7 @@ const Overview = React.lazy(() => import('./pages/Overview'));
 const Services = React.lazy(() => import('./pages/Services'));
 const Terms = React.lazy(() => import('./pages/Terms'));
 const Rules = React.lazy(() => import('./pages/Rules'));
+const Requirements = React.lazy(() => import('./pages/Requirements'));
 const About = React.lazy(() => import('./pages/About'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const Privacy = React.lazy(() => import('./pages/Privacy'));
@@ -34,7 +35,8 @@ function App() {
           <Route path="/Terms-of-use" element={<><Navigation /><Terms /></>} />
           <Route path="/About-us" element={<><Navigation /><About /></>} />
           <Route path="/Contact" element={<><Navigation /><Contact /></>} />
-          <Route path="/Rules" element={<><Navigation /><Rules /></>} />
+          <Route path="/Business-rules" element={<><Navigation /><Rules /></>} />
+          <Route path="/Business-requirements" element={<><Navigation /><Requirements /></>} />
           <Route path="/Privacy-policy" element={<><Navigation /><Privacy /></>} />
           <Route path="/Account/*" element={<Users />} />
           <Route path="*" element={<><Navigation /><NotFound /></>} />
