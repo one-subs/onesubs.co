@@ -47,10 +47,11 @@ function Navigation() {
                 <Link to="/business"><span onClick={() => setDisplay(false)}>Business</span></Link>
             </div>
             <div className="pages">
-                <Link to="/account"><span onClick={() => setDisplay(false)}>Account</span></Link>
+                <Link to="/account"><span onClick={() => document.body.style.overflowY="auto"}>Account</span></Link>
                 <Link to="/contact"><span onClick={() => setDisplay(false)}>Contact</span></Link>
                 <Link to="/about-us"><span onClick={() => setDisplay(false)}>About us</span></Link>
                 <Link to="/terms-of-use"><span onClick={() => setDisplay(false)}>Terms of use</span></Link>
+                <Link to="/privacy-policy"><span onClick={() => setDisplay(false)}>Privacy policy</span></Link>
             </div>
         </div>
     );
