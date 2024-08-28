@@ -156,19 +156,18 @@
 @media only screen and (max-width: 900px) {
   .landing_page .page_width .wellcome {
     width: 100%;
-    min-height: 50vh;
+    min-height: 25vh;
   }
 
   .landing_page .page_width .wellcome h1 {
     width: 80%;
     margin-top: 75px;
-    text-align: center;
     font-size: 2.5rem;
+    margin-bottom: 20px;
   }
 
   .landing_page .page_width .wellcome p {
-    width: 80%;
-    text-align: center;
+    display: none;
   }
 
   .landing_page .page_width .wellcome .button_1 {
@@ -286,7 +285,7 @@
     }
 }
 
-.description .page_width .right .inputs {
+.description .page_width .right .banner, .description .page_width .left .banner {
   width: 350px;
   min-height: 100px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -295,18 +294,7 @@
   padding: 20px 0px;
 }
 
-.description .page_width .right .inputs h2 {
-  margin-left: 10%;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-size: 40px;
-  color: #2174ea;
-  font-family: "Book Antiqua", Palatino, serif;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.description .page_width .right .inputs input[type=text] {
+.description .page_width .right .banner input[type=text], .description .page_width .left .banner input[type=text] {
   width: calc(50% - 20px);
   height: 35px;
   outline: none;
@@ -317,7 +305,7 @@
   border-right: none;
 }
 
-.description .page_width .right .inputs button {
+.description .page_width .right .banner button, .description .page_width .left .banner button {
   width: 30%;
   height: 37px;
   outline: none;
@@ -331,7 +319,7 @@
   letter-spacing: 1px;
 }
 
-.description .page_width .right .inputs p {
+.description .page_width .right .banner p, .description .page_width .left .banner p {
   font-size: 1.1rem;
   text-align: start;
   width: 80%;
