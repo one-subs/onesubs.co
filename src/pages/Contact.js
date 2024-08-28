@@ -4,7 +4,7 @@ function Contact() {
     return (
         <>
             <div className="document">
-            <div className="banner">
+            <div className="hat">
                 <h1>Contact us</h1>
             </div>
                 <h2>We’re Here to Help</h2>

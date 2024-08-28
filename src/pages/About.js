@@ -2,7 +2,7 @@ function About() {
     return (
       <>
         <div className="document">
-          <div className="banner">
+          <div className="hat">
             <h1>About us</h1>
           </div>
             <h2>Welcome to OneSubs</h2>

@@ -2,7 +2,7 @@ function Rules() {
   return (
     <>
       <div className="document">
-        <div className="banner">
+        <div className="hat">
           <h1 style={{marginTop: "120px", color: "#FFFFFF", textAlign: "start"}}>Privacy Policy for OneSubs</h1>
         </div>
         <h1>Privacy Policy</h1>

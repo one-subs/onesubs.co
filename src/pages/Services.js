@@ -5,7 +5,7 @@ function Partners() {
   return (
     <>
       <div className="document">
-        <div className="banner" style={{ marginBottom: "0px" }}>
+        <div className="hat" style={{ marginBottom: "0px" }}>
           {/* <h1>Explore tools with our subscriptions.</h1> */}
           <h1>Discover Our Future Offerings</h1>
         </div>

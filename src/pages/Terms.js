@@ -2,7 +2,7 @@ function Terms() {
   return (
     <>
       <div className="document">
-        <div className="banner">
+        <div className="hat">
           <h1 style={{marginTop: "120px", color: "#FFFFFF", textAlign: "start"}}>Terms of use</h1>
         </div>
           <p><b>Effective Date:</b> August 10, 2024</p>

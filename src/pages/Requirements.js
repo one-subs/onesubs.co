@@ -5,7 +5,7 @@ function Rules() {
   return (
     <>
       <div className="document">
-        <div className="banner">
+        <div className="hat">
           <h1 style={{marginTop: "120px", color: "#FFFFFF", textAlign: "start"}}>OneSubs for Business</h1>
         </div>
           <p>Join our platform and start earning by offering your services to our users. We handle the marketing and user acquisition—you focus on delivering great service.</p>

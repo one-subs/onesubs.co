@@ -260,29 +260,34 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .description .page_width .left, 
-    .description .page_width .right {
-      width: 100%;
-    }
+  .description .page_width h1 {
+    font-size: 2.5em;
+  }
 
-    .description .page_width .left {
-      border: 0;
-      border-bottom: 1px solid #94a3b8;
-    }
+  .description .page_width .left, 
+  .description .page_width .right {
+    width: 100%;
+  }
 
-    .description .page_width .right {
-      margin-bottom: 100px;
-    }
+  .description .page_width .left {
+    border: 0;
+    border-bottom: 1px solid #94a3b8;
+  }
 
-    .description .page_width .left h2, 
-    .description .page_width .right h2 {
-      width: 80%;
-    }
-    
-    .description .page_width .left p,  
-    .description .page_width .right p {
-      width: 80%;
-    }
+  .description .page_width .right {
+    margin-bottom: 100px;
+  }
+
+  .description .page_width .left h2, 
+  .description .page_width .right h2 {
+    width: 80%;
+    font-size: 1.8rem;
+  }
+  
+  .description .page_width .left p,  
+  .description .page_width .right p {
+    width: 80%;
+  }
 }
 
 .description .page_width .right .banner, .description .page_width .left .banner {
@@ -368,6 +373,7 @@
 
   .business_background h1 {
     margin-top: 75px;
+    font-size: 30px;
   }
 
   .business_background p {
@@ -504,15 +510,22 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .pricing .page_width h1 {
+    font-size: 2.5rem;
+    font-weight: 550;
+    font-family: Arial;
+    text-align: start;
+  }
+
   .pricing .page_width .price_list {
-      margin-top: 0;
-      width: 100%;
-      display: block;
-      padding: 20px 0;
+    margin-top: 0;
+    width: 100%;
+    display: block;
+    padding: 20px 0;
   }
 
   .pricing .page_width .price_list .card {
-      width: 280px;
+    width: 280px;
   }
 }
 
@@ -658,6 +671,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .cta .page_width h1 {
+    font-size: 35px;
+  }
   .cta .page_width p {
     display: none;
   }
@@ -773,6 +789,24 @@
   float: left;
 }
 
+.document .hat {
+  width: 100%;
+  min-height: 150px;
+  float: left;
+  background-color: #101d2d;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.document .hat h1 {
+  max-width: 1000px;
+  font-size: 40px;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 25px;
+}
+
 .document h1, .document h2, .document h3, .document h4 {
   max-width: 1000px;
   font-size: 27px;
@@ -793,24 +827,6 @@
   font-size: 21px;
 }
 
-.document .banner {
-  width: 100%;
-  min-height: 150px;
-  float: left;
-  background-color: #101d2d;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.document .banner h1 {
-  max-width: 1000px;
-  font-size: 40px;
-  color: #ffffff;
-  margin: auto;
-  margin-top: 120px;
-  margin-bottom: 25px;
-}
-
 .document p {
   max-width: 1000px;
   font-size: 20px;
@@ -829,17 +845,13 @@
 
 
 @media only screen and (max-width: 600px) {
-  .document .banner h1 {
+  .document .hat h1 {
     width: 90%;
     margin-top: 100px;
     margin-bottom: 25px;
   }
 
-  .document h2 {
-    width: 90%;
-  }
-
-  .document p {
+  .document h1, .document h2, .document h3, .document h4, .document p {
     width: 90%;
   }
 }
