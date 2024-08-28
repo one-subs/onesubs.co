@@ -23,7 +23,6 @@ function Login() {
   const login = async (e) => {
     e.preventDefault();
     try {
-      console.log(password);
       const response = await request("/user/login", "POST", { email, password });
       if (response) {
         auth.login(response.token, response.userId);
