@@ -27,7 +27,7 @@ function CreateAccount() {
           <Join style={{ marginTop: '40px', width: '500px', height: '400px' }}/>
         </div>
         <div className="right">
-          <div className="form" style={{ marginTop: (window.innerWidth > 900) ? "50px" : "0px" }}>
+          <div className="form">
             <h1>Sign up</h1>
             <div className="input-container">
               <input type="text" name="email" onChange={(e) => {setEmail(e.target.value)}} required/>

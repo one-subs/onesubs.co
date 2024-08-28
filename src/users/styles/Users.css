@@ -67,9 +67,16 @@
 }
   
 @media only screen and (max-width: 900px) {
+    .user {
+        min-height: 300px;
+    }
+
     .user .page_width .left, 
     .user .page_width .right {
         width: 100%;
+        min-height: 300px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
   
     .user .page_width .left {
