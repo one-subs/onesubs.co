@@ -70,6 +70,7 @@ function Login() {
               <Link to={`${process.env.REACT_APP_BUSINESS}/`} style={{ textDecoration: 'none', color: '#1e293b' }}><span style={{ marginLeft: "15px" }}>Business account</span></Link>
             </div>
             <GoogleLogin
+              clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
               onSuccess={credentialResponse => {
                 googleAccount(credentialResponse.credential);
               }}
