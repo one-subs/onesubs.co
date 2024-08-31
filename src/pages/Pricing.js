@@ -235,7 +235,7 @@ function Pricing({ more }) {
                         <div className="price">
                             <span className="symbol">$</span><span className='number'>{floatToIntIfDecimal(price(subscription, days, amount))}</span>
                         </div>
-                        <p style={{ paddingBottom: '10px', borderBottom: '1px solid #64748b' }}>{/*Flexible subscription for everyone.*/} Works in every Monday. Try any options with our Custom subscription plan.</p>
+                        <p style={{ paddingBottom: '10px', borderBottom: '1px solid #64748b' }}>Flexible subscription for everyone. Open on Mondays. Try any options with our Custom subscription plan.</p>
                         <p>Number of days: (min 5, max 90)</p>
                         <input type="number" onChange={(e) => setDays(`${e.target.value}`)} value={days}/>
                         <p>OneSubs plan:</p>
