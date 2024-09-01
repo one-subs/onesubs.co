@@ -16,7 +16,7 @@ function Description() {
     const sectionTwo = [
         <>
             <h2>Enter One-time Code</h2>
-            <p>Insert an access code to our partner service, and get access to their tools until 23:59. After midnight, you can update verification code to continue or explore other tools.</p>
+            <p>Insert an access code to our partner service, and get 24 hours of access to their tools. After midnight, you can update verification code to continue or explore other tools.</p>
         </>,
         <Verify style={{ marginTop: '50px', maxWidth: '350px', maxHeight: '310px' }}/>
     ];

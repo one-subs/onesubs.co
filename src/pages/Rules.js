@@ -10,25 +10,32 @@ function Rules() {
         </div>
           <h2>Welcome to OneSubs!</h2>
           <p>By activating your business account with OneSubs, you agree to the following rules and policies. These guidelines are designed to ensure a seamless and mutually beneficial partnership.</p>
-          <h2>1. Account Activation</h2>
+          <h2>1. Partner Content Guidelines</h2>
+          <p>Our partners are required to <b>provide online tools or entertainment</b> services that align with our values and community standards. Specifically, partner offerings must:</p>
+          <p>• <b>Exclude adult (+18) content, violent or offensive material, and any form of gambling or money games.</b></p>
+          <p>• <b>Avoid imposing any additional charges or fees on users beyond the agreed subscription.</b></p>
+          <p>• <b>Not involve any form of money transactions directly with users.</b></p>
+          <p>We reserve the right to review and approve all partner content to ensure compliance with these guidelines.</p>
+          <h2>2. Account Activation</h2>
           <p>• <b>Verification:</b> Upon activation, you must verify your email and provide accurate information about your business.</p>
           <p>• <b>Initial Setup:</b> Complete the initial setup process, including any necessary integrations with your services.</p>
-          <h2>2. Service Integration</h2>
+          <h2>3. Service Integration</h2>
           <p>• <b>Technical Requirements:</b> Ensure your services meet OneSubs technical requirements for integration.</p>
           <p>- Place OneSubs Logo with redirect button to https://onesubs.co in your OneSubs integrated component. Click <a href={blue} download="onesubs-logo-blue.png" style={{ color: "#334155" }}>Blue</a> or <a href={white} download="onesubs-logo-white.png" style={{ color: "#334155" }}>White</a> to download PNG logo.</p>
-          <h2>3. Revenue Sharing</h2>
+          <h2>4. Revenue Sharing</h2>
           <p>• <b>Payment Terms:</b> OneSubs will distribute payments based on the agreed revenue-sharing model (e.g., $0.04 per user per day or $3.33 per user per month).</p>
           <p>• <b>Your Service Price:</b> Make sure your service price per user per day is close to the original price, no more and not too less.</p>
           <p>• <b>Reporting:</b> We will send you an email about your bank account details. You have to approve provided informations.</p>
-          <h2>4. User Experience</h2>
+          <h2>5. User Experience</h2>
           <p>• <b>Service Quality:</b> Maintain high service quality and user experience for OneSubs subscribers. <b>Share access to the premium service, which is not free to use.</b></p>
-          <h2>5. Compliance</h2>
+          <p>• <b>Access sharing:</b> Give an access for <b>24 hours</b> if user enters valid access code in your service.</p>
+          <h2>6. Compliance</h2>
           <p>• <b>Legal Compliance:</b> Ensure your service complies with all applicable laws and regulations.</p>
           <p>• <b>Policy Adherence:</b> Adhere to OneSubs policies and guidelines at all times.</p>
-          <h2>6. Changes and Updates</h2>
+          <h2>7. Changes and Updates</h2>
           <p>• <b>Policy Changes:</b> OneSubs reserves the right to update these rules and policies. You will be notified of any changes, and continued use of your business account constitutes acceptance of the updated terms.</p>
           <p>• <b>Service Improvements:</b> As part of our commitment to improving the platform, you may be required to implement minor changes or updates to your service.</p>
-          <h2>7. Termination</h2>
+          <h2>8. Termination</h2>
           <p>• <b>Account Suspension:</b> OneSubs reserves the right to suspend or terminate accounts that violate these rules and policies.</p>
           <p>• <b>Voluntary Termination:</b> You may terminate your account by providing written notice to OneSubs. Upon termination, you must cease all use of OneSubs platform and services.</p>
           

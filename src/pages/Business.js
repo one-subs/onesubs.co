@@ -12,7 +12,7 @@ const onesubs = () => {
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
             </svg>
-            Access until 23:59</p>
+            Access for 24 hours</p>
         <p>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
@@ -77,7 +77,7 @@ function Business() {
         onesubs(),
         <>
             <h2>How do people use your tool via OneSubs?</h2>
-            <p>In your pricing page, you will have the OneSubs option as following. User enters a one time code there (e.g., "5T423R"). If user has the subscription, you will give an access until midnight.</p>
+            <p>In your pricing page, you will have the OneSubs option as following. User enters a one time code there (e.g., "5T423R"). If user has the subscription, you will give an access for 24 hours.</p>
         </>
     ];
 
@@ -85,7 +85,7 @@ function Business() {
         <Collab style={{ marginTop: '50px', maxWidth: '350px', maxHeight: '310px' }}/>,
         <>
             <h2>How to inegrate OneSubs?</h2>
-            <p>We will share you an API that checks user access code. You have to imlement verification process into your web service. When API approves the user, you will give an access by 23:59 from user's time.</p>
+            <p>We will share you an API that checks user access code. You have to imlement verification process into your web service. When API approves the user, you will give an access for 24 hours.</p>
         </>
     ];
 

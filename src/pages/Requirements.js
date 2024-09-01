@@ -10,14 +10,40 @@ function Rules() {
         </div>
           <p>Join our platform and start earning by offering your services to our users. We handle the marketing and user acquisition—you focus on delivering great service.</p>
           <h2>How It Works</h2>
+          <h3>Your service should provide online tools or entertainment</h3>
+          <ul>
+            <li>
+              <p>Exclude adult (+18) content, violent or offensive material, and any form of gambling or money games.</p>
+            </li>
+            <li>
+              <p>Avoid imposing any additional charges or fees on users beyond the agreed subscription.</p>
+            </li>
+            <li>
+              <p>Not involve any form of money transactions directly with users.</p>
+            </li>
+          </ul>
           <h3>Earn Revenue</h3>
-          <p>• Set the original price of your platform per user per day, no more and not too less. OneSubs price range is from $0.04 - $3.33.</p>
-          <p>• <b>Example:</b> if your service costs $19 per month, remove payment fee ~5%, and divide by 30. You will get ~$0.6, and this is your price at OneSubs per user per day.</p>
+          <ul>
+            <li>
+              <p>Set the original price of your platform per user per day, no more and not too less. OneSubs price range is from $0.04 - $3.33.</p>
+            </li>
+            <li>
+              <p><b>Example:</b> if your service costs $19 per month, remove payment fee ~5%, and divide by 30. You will get ~$0.6, and this is your price at OneSubs per user per day.</p>
+            </li>
+          </ul>
           <h3>Integration</h3>
-          <p>• We will share you only one POST API to approve the user to use your service.</p>
-          <p>• You can place it in your pricing page, describing what benefits user can get with OneSubs.</p>
-          <p>• On that description, you are required to place the OneSubs <a href={blue} download="onesubs-logo-blue.png" style={{ color: "#334155" }}>Blue</a> or <a href={white} download="onesubs-logo-white.png" style={{ color: "#334155" }}>White</a> logo with redirect on click.</p>
-          
+          <ul>
+            <li>
+              <p>We will share you only one POST API to approve the user to use your service.</p>
+            </li>
+            <li>
+              <p>You can place it in your pricing page, describing what benefits user can get with OneSubs.</p>
+            </li>
+            <li>
+              <p>On that description, you are required to place the OneSubs <a href={blue} download="onesubs-logo-blue.png" style={{ color: "#334155" }}>Blue</a> or <a href={white} download="onesubs-logo-white.png" style={{ color: "#334155" }}>White</a> logo with redirect on click.</p>
+            </li>
+          </ul>
+
           <h2>What We Need From You</h2>
           <p>To activate your service, we’ll need the following basic information:</p>
           <p><b>Company Information:</b> Legal business name, Registration number, Tax identification number, Company address, Company contact information.</p>
