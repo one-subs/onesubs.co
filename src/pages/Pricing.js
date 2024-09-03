@@ -28,11 +28,13 @@ function Pricing({ more }) {
 
     return (
         <div className="pricing">
+            {(more) ? 
             <Helmet>
                 <title>Pricing</title>
                 <meta name="description" content="Find the right plan for your creativity." />
                 <link rel="canonical" href={`${process.env.REACT_APP_ONESUBS}/pricing`} />
-            </Helmet>
+            </Helmet> : <></>}
+            
             <div className="page_width">
                 <h1>Find the right plan for your creativity</h1>
                 {isMobile ? "" :
