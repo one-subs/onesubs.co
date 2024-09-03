@@ -1,9 +1,15 @@
+import { Helmet } from "react-helmet";
 import Cards from './components/Cards';
 import Cta from './components/Cta';
 
 function Partners() {
   return (
     <>
+      <Helmet>
+          <title>Services</title>
+          <meta name="description" content="Discover Our Offerings" />
+          <link rel="canonical" href={`${process.env.REACT_APP_ONESUBS}/services`} />
+      </Helmet>
       <div className="document">
         <div className="hat" style={{ marginBottom: "0px" }}>
           {/* <h1>Explore tools with our subscriptions.</h1> */}

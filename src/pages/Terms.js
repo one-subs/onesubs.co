@@ -1,6 +1,13 @@
+import { Helmet } from "react-helmet";
+
 function Terms() {
   return (
     <>
+      <Helmet>
+          <title>Terms of use</title>
+          <meta name="description" content="These Terms of Use govern your access to and use of our all-in-one subscription service for premium online tools and services. By accessing or using our services, you agree to comply with and be bound by these terms." />
+          <link rel="canonical" href={`${process.env.REACT_APP_ONESUBS}/terms-of-use`} />
+      </Helmet>
       <div className="document">
         <div className="hat">
           <h1 style={{marginTop: "120px", color: "#FFFFFF", textAlign: "start"}}>Terms of use</h1>

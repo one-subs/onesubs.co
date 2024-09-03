@@ -1,6 +1,13 @@
+import { Helmet } from "react-helmet";
+
 function About() {
     return (
       <>
+        <Helmet>
+            <title>About us</title>
+            <meta name="description" content="At OneSubs, we are redefining the way you access premium online services. Our mission is to provide a seamless and cost-effective solution for individuals and businesses who need multiple subscriptions to various online tools." />
+            <link rel="canonical" href={`${process.env.REACT_APP_ONESUBS}/about-us`} />
+        </Helmet>
         <div className="document">
           <div className="hat">
             <h1>About us</h1>

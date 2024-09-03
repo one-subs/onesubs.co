@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function Contact() {
     return (
         <>
+            <Helmet>
+                <title>Contact</title>
+                <meta name="description" content="At OneSubs, we value our users and partners. Whether you have a question, need assistance, or want to provide feedback, our team is here to support you." />
+                <link rel="canonical" href={`${process.env.REACT_APP_ONESUBS}/contact-us`} />
+            </Helmet>
             <div className="document">
             <div className="hat">
                 <h1>Contact us</h1>

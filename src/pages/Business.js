@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
+
 import { ReactComponent as Collab } from '../styles/images/collab.svg';
 import { ReactComponent as Partner } from '../styles/images/partner.svg';
 import { ReactComponent as Earnings } from '../styles/images/earnings.svg';
 import { ReactComponent as Logo } from '../styles/images/logo_blue.svg';
-import { Link } from 'react-router-dom';
 
 const onesubs = () => {
     return <div className="banner">
@@ -99,6 +101,11 @@ function Business() {
 
     return (
         <>
+            <Helmet>
+                <title>Business</title>
+                <meta name="description" content="We're designing a new way to do business." />
+                <link rel="canonical" href={`${process.env.REACT_APP_ONESUBS}/business`} />
+            </Helmet>
             <div className="business_background">
                 <h1>We're designing a new way to do business.</h1>
                 {isMobile ? "" : <p>Step into a new realm of collaboration and growth. We're dedicated to forging meaningful partnerships that drive mutual success.</p>}

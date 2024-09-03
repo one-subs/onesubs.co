@@ -1,9 +1,15 @@
+import { Helmet } from "react-helmet";
 import blue from '../styles/images/onesubs-logo-blue.png';
 import white from '../styles/images/onesubs-logo-white.png';
 
 function Rules() {
   return (
     <>
+      <Helmet>
+          <title>Business Account Rules and Policy</title>
+          <meta name="description" content="By activating your business account with OneSubs, you agree to the following rules and policies. These guidelines are designed to ensure a seamless and mutually beneficial partnership." />
+          <link rel="canonical" href={`${process.env.REACT_APP_ONESUBS}/business-rules`} />
+      </Helmet>
       <div className="document">
         <div className="hat">
           <h1 style={{marginTop: "120px", color: "#FFFFFF", textAlign: "start"}}>OneSubs Business Account Rules and Policy</h1>

@@ -1,6 +1,13 @@
+import { Helmet } from "react-helmet";
+
 function Rules() {
   return (
     <>
+      <Helmet>
+          <title>Privacy policy</title>
+          <meta name="description" content="This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You." />
+          <link rel="canonical" href={`${process.env.REACT_APP_ONESUBS}/privacy-policy`} />
+      </Helmet>
       <div className="document">
         <div className="hat">
           <h1 style={{marginTop: "120px", color: "#FFFFFF", textAlign: "start"}}>Privacy Policy for OneSubs</h1>
