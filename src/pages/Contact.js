@@ -14,7 +14,7 @@ function Contact() {
                 <p>• <b>Email:</b> support@onesubs.net</p>
                 <p>• <b>Response Time:</b> We strive to respond to all inquiries within 24 hours on business days.</p>
                 <h2>Business Inquiries</h2>
-                <p>• <b>Partnerships and Business support:</b> business@onesubs.net</p>
+                <p>• <b>Partnerships and partner support:</b> business@onesubs.net</p>
                 <h2>Follow Us</h2>
                 <p>Stay updated with the latest news, updates, and special offers by following us on social media.</p>
                 <h2>Social Network</h2>

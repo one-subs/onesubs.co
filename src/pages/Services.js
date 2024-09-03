@@ -1,5 +1,5 @@
-import Cards from './sections/Cards';
-import Cta from './sections/Cta';
+import Cards from './components/Cards';
+import Cta from './components/Cta';
 
 function Partners() {
   return (

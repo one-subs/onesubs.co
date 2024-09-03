@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Description from './sections/Description';
-import Cta from "./sections/Cta";
+import Description from './components/Description';
+import Cta from "./components/Cta";
 
 function Overview() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);

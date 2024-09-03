@@ -2,8 +2,8 @@ import React, { Suspense } from 'react';
 import './styles/App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Navigation from './pages/Navigation';
-import Footer from './pages/Footer';
+import Navigation from './pages/components/Navigation';
+import Footer from './pages/components/Footer';
 import Loading from './pages/Loading';
 import NotFound from './pages/NotFound';
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../styles/images/logo_blue.svg';
+import { ReactComponent as Logo } from '../../styles/images/logo_blue.svg';
 
 function Navigation() {
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import Landing from './sections/Landing';
-import Description from './sections/Description';
+import Landing from './components/Landing';
+import Description from './components/Description';
 import Pricing from './Pricing';
-import Cta from './sections/Cta';
-import Business from './sections/Business';
+import Cta from './components/Cta';
+import Business from './components/Business';
 
 function Opening() {
   return (
