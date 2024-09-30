@@ -35,17 +35,22 @@ function Verification() {
     <div className="user">
       {error ? <Alert message={error} type={"error"} clearError={clearError}/> : ""}
       <div className="page_width">
+
         <div className="left"> 
           <div className="form">
+
             <h1>Verify</h1>
+
             <div className="input-container">
               <input type="text" name="email" onChange={(e) => setEmail(e.target.value)} required/>
               <label htmlFor="input">Email</label>
             </div>
+
             <div className="input-container">
               <input type="number" name="code" onChange={(e) => setVerification(e.target.value)} required/>
               <label htmlFor="input">Verification code</label>
             </div>
+
             <div className="input-container">
               <input type={showPassword ? "text" : "password"} name="password" onChange={(e) => {
                   setPassword(e.target.value)
@@ -55,13 +60,17 @@ function Verification() {
                 }} required/>
               <label htmlFor="input">Create password</label>
             </div>
+
             <button onClick={(e) => verify(e)} style={{ marginBottom: "20px" }}>Create</button>
+
             <p style={{ fontSize: "15px", margin: "0", width: "100%" }}>Check your email for the verification code</p>
           </div>
         </div>
+
         <div className="right" style={{ display: (window.innerWidth > 900) ? "block" : "none" }}>
           <Mail style={{ marginTop: '40px', width: '600px', height: '500px' }}/>
         </div>
+        
       </div>
     </div>
   );

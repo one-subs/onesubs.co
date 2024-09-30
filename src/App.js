@@ -11,7 +11,6 @@ import NotFound from './pages/NotFound';
 const Opening = React.lazy(() => import('./pages/Opening'));
 const Business = React.lazy(() => import('./pages/Business'));
 const Pricing = React.lazy(() => import('./pages/Pricing'));
-const Overview = React.lazy(() => import('./pages/Overview'));
 const Services = React.lazy(() => import('./pages/Services'));
 const Terms = React.lazy(() => import('./pages/Terms'));
 const Rules = React.lazy(() => import('./pages/Rules'));
@@ -30,7 +29,6 @@ function App() {
           <Route path="/" element={<><Navigation /><Opening /></>} />
           <Route path="/Business" element={<><Navigation /><Business /></>} />
           <Route path="/Pricing" element={<><Navigation /><Pricing more={true} /></>} />
-          <Route path="/Overview" element={<><Navigation /><Overview /></>} />
           <Route path="/Services" element={<><Navigation /><Services /></>} />
           <Route path="/Terms-of-use" element={<><Navigation /><Terms /></>} />
           <Route path="/About-us" element={<><Navigation /><About /></>} />

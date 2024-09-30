@@ -23,20 +23,28 @@ function CreateAccount() {
     <div className="user">
       {error ? <Alert message={error} type={"error"} clearError={clearError}/> : ""}
       <div className="page_width">
+
         <div className="left" style={{ display: (window.innerWidth > 900) ? "block" : "none" }}>
           <Join style={{ marginTop: '40px', width: '500px', height: '400px' }}/>
         </div>
+
         <div className="right">
           <div className="form">
+
             <h1>Sign up</h1>
+
             <div className="input-container">
               <input type="text" name="email" onChange={(e) => {setEmail(e.target.value)}} required/>
               <label htmlFor="input">Email</label>
             </div>
+            
             <h5 style={{ textAlign: "center", fontSize: "15px", fontWeight: "400" }}>Enter your email and receive the verification code to continue registration.</h5>
+            
             <button onClick={(e) => create(e)} style={{ margin: "0px" }}>Create</button>
+
           </div>
         </div>
+
       </div>
     </div>
   );

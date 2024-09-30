@@ -30,7 +30,6 @@ function Navigation() {
 
     const desktopMenu = (
         <div className="pages">
-            <Link to="/overview"><span>Overview</span></Link>
             <Link to="/services"><span>Services</span></Link>
             <Link to="/pricing"><span>Pricing</span></Link>
             <Link to="/business"><span>Business</span></Link>
@@ -41,7 +40,6 @@ function Navigation() {
     const mobileMenu = (
         <div className="menu">
             <div className="pages">
-                <Link to="/overview"><span onClick={() => setDisplay(false)}>Overview</span></Link>
                 <Link to="/services"><span onClick={() => setDisplay(false)}>Services</span></Link>
                 <Link to="/pricing"><span onClick={() => setDisplay(false)}>Pricing</span></Link>
                 <Link to="/business"><span onClick={() => setDisplay(false)}>Business</span></Link>

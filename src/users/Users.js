@@ -21,6 +21,7 @@ const Users = () => {
           <meta name="description" content="Soon we will launch our service, and you'll be the first to know." />
           <link rel="canonical" href={`${process.env.REACT_APP_ONESUBS}/account`} />
       </Helmet>
+      
       <AuthContext.Provider value={{ token, login, logout, isAuthenticated }}>
         { routes }
       </AuthContext.Provider>
