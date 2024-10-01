@@ -4,18 +4,18 @@
   text-align: center;
   background-color: #101d2d;
   width: 100%;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
   padding-bottom: 50px;
 }
 
-@media only screen and (min-width: 900px) {
+/* @media only screen and (min-width: 900px) {
   .landing_page {
     background: linear-gradient(rgba(16, 29, 45, 0.9), rgba(16, 29, 45, 0.7)), url("./images/work.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: rgba(30, 41, 59, 0.5);
   }
-}
+} */
 
 .landing_page .page_width {
   max-width: 1400px;
@@ -26,7 +26,7 @@
 .landing_page .page_width .wellcome {
   float: left;
   text-align: center;
-  min-height: 70vh;
+  min-height: 60vh;
   width: 50%;
 }
 
@@ -43,12 +43,12 @@
   font-size: 3.5rem;
   width: 70%;
   margin: auto;
-  margin-top: 25vh;
+  margin-top: 150px;
   text-align: start;
   color: #ffffff;
   font-family: Playfair Display, serif;
   animation: fadeInLeft 1.5s ease;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   visibility: hidden;
   animation-fill-mode: forwards;
 }
@@ -61,7 +61,7 @@
   margin-top: 20px;
   margin-bottom: 35px;
   animation: fadeInLeft 1.5s ease;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   color: #94a3b8;
   visibility: hidden;
   animation-fill-mode: forwards;
@@ -80,7 +80,7 @@
   line-height: 45px;
   letter-spacing: 0.55px;
   animation: fadeInLeft 1.5s ease;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   padding: 0 20px;
   visibility: hidden;
   animation-fill-mode: forwards;
@@ -109,9 +109,9 @@
   height: 340px;
   border: 1px solid #ffffff;
   margin-left: 210px;
-  margin-top: 25vh;
+  margin-top: 150px;
   animation: fadeInRight 1.5s ease;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   visibility: hidden;
   animation-fill-mode: forwards;
 }
@@ -124,7 +124,7 @@
   margin-top: -310px;
   text-align: start;
   animation: fadeInRight 2s ease;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   visibility: hidden;
   animation-fill-mode: forwards;
   border-radius: 20px;
@@ -148,7 +148,7 @@
   margin-bottom: 7px;
   color: #f1f1f1;
   animation: fadeInRight 1.5s ease;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   visibility: hidden;
   animation-fill-mode: forwards;
 }

@@ -110,6 +110,7 @@ function Business() {
                 <h1>We're designing a new way to do business.</h1>
                 {isMobile ? "" : <p>Step into a new realm of collaboration and growth. We're dedicated to forging meaningful partnerships that drive mutual success.</p>}
                 <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button>Start now</button></Link>
+                <Link to="/business-requirements"><button style={{ marginLeft: "20px", backgroundColor: "#334155" }} onClick={() => window.scrollTo(0, 0)}>More info</button></Link>
             </div>
 
             <div className="description">
