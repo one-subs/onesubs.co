@@ -154,10 +154,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .landing_page {
-    margin-bottom: 0px;
-  }
-
   .landing_page .page_width .wellcome {
     width: 100%;
     min-height: 25vh;
