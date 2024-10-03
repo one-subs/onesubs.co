@@ -154,6 +154,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .landing_page {
+    margin-bottom: 0px;
+  }
+
   .landing_page .page_width .wellcome {
     width: 100%;
     min-height: 25vh;
@@ -269,11 +273,12 @@
   .description .page_width .left, 
   .description .page_width .right {
     width: 100%;
+    min-height: 250px;
+    margin: 0;
   }
 
   .description .page_width .left {
     border: 0;
-    border-bottom: 1px solid #94a3b8;
   }
 
   .description .page_width .right {
