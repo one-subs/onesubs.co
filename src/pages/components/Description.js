@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos'; 
 import { ReactComponent as AllInOne } from '../../styles/images/all_in_one.svg';
 import { ReactComponent as Verify } from '../../styles/images/verify.svg';
 import { ReactComponent as Partner } from '../../styles/images/premium.svg';
 
 function Description() {
+
+    useEffect(() => {
+        AOS.init(); // Initialize AOS
+        AOS.refresh(); // Refresh AOS in case the content changes
+    }, []);
 
     const sectionOne = [
         <>
@@ -35,10 +42,14 @@ function Description() {
                 <div className="page_width">
                     <h1>What do we offer?</h1>
                     <div className="left">
-                        {(window.innerWidth > 900) ? sectionOne[0] : sectionOne[1]}
+                        <div data-aos="fade-right" data-aos-duration="1500">
+                            {(window.innerWidth > 900) ? sectionOne[0] : sectionOne[1]}
+                        </div>
                     </div>
                     <div className="right">
-                        {(window.innerWidth > 900) ? sectionOne[1] : sectionOne[0]}
+                        <div data-aos="fade-left" data-aos-duration="1500">
+                            {(window.innerWidth > 900) ? sectionOne[1] : sectionOne[0]}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,10 +58,14 @@ function Description() {
                 <div className="page_width">
                     <h1>How it works?</h1>
                     <div className="left">
-                        {sectionTwo[1]}
+                        <div data-aos="fade-right" data-aos-duration="1500">
+                            {sectionTwo[1]}
+                        </div>
                     </div>
                     <div className="right">
-                        {sectionTwo[0]}
+                        <div data-aos="fade-left" data-aos-duration="1500">
+                            {sectionTwo[0]}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,10 +74,14 @@ function Description() {
                 <div className="page_width">
                     <h1>Our partners</h1>
                     <div className="left">
-                        {(window.innerWidth > 900) ? sectionThree[0] : sectionThree[1]}
+                        <div data-aos="fade-right" data-aos-duration="1500">
+                            {(window.innerWidth > 900) ? sectionThree[0] : sectionThree[1]}
+                        </div>
                     </div>
                     <div className="right">
-                        {(window.innerWidth > 900) ? sectionThree[1] : sectionThree[0]}
+                        <div data-aos="fade-left" data-aos-duration="1500">
+                            {(window.innerWidth > 900) ? sectionThree[1] : sectionThree[0]}
+                        </div>
                     </div>
                 </div>
             </div>
