@@ -231,6 +231,7 @@
   align-items: center;
   min-height: 500px;
   width: 50%;
+  overflow: hidden;
 }
 
 .description .page_width .left {
