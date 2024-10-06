@@ -86,7 +86,7 @@ function Business() {
     const sectionThree = [
         <Collab style={{ marginTop: '50px', maxWidth: '350px', maxHeight: '310px' }}/>,
         <>
-            <h2>How to inegrate OneSubs?</h2>
+            <h2>How to integrate OneSubs?</h2>
             <p>We will share you an API that checks user access code. You have to imlement verification process into your web service. When API approves the user, you will give an access for 24 hours.</p>
         </>
     ];
