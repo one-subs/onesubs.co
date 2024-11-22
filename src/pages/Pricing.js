@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { price, date } from "../calculator";
+import { price/*, date*/ } from "../calculator";
 import { Link } from 'react-router-dom';
 
 function Pricing({ more }) {
-    const [days, setDays] = useState("5");
-    const [subscription, setSubscription] = useState('Basic');
-    const [amount, setAmount] = useState("1");
+    // const [days, setDays] = useState("5");
+    // const [subscription, setSubscription] = useState('Basic');
+    // const [amount, setAmount] = useState("1");
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
   
     useEffect(() => {
@@ -18,7 +18,7 @@ function Pricing({ more }) {
       return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    // const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
     function floatToIntIfDecimal(num) {
         const numStr = num.toString();
@@ -239,8 +239,8 @@ function Pricing({ more }) {
                     </div>
                     
                     <div className="card" style={{ height: '490px' }}>
-                        <h3>Custom</h3>
-                        <div className="price">
+                        <h3 style={{ marginTop: '160px', textAlign: 'center' }}>Power Up Your Business</h3>
+                        {/* <div className="price">
                             <span className="symbol">$</span><span className='number'>{floatToIntIfDecimal(price(subscription, days, amount))}</span>
                         </div>
                         <p style={{ paddingBottom: '10px', borderBottom: '1px solid #64748b' }}>Flexible subscription for everyone. Open on Mondays. Try any options with our Custom subscription plan.</p>
@@ -260,7 +260,10 @@ function Pricing({ more }) {
                         <Link to="/account">
                             <button style={{ marginTop: '19px' }}>Sign up</button>
                         </Link>
-                        <p>Ends on {months[date(days).getMonth()]} {date(days).getDate()} at 23:59</p>
+                        <p>Ends on {months[date(days).getMonth()]} {date(days).getDate()} at 23:59</p> */}
+                        <Link to="/account">
+                            <button style={{ marginTop: '19px' }}>Sign up now</button>
+                        </Link>
                     </div>
 
                 </div> : <></>}

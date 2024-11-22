@@ -20,7 +20,7 @@ function Landing() {
             <div className="landing_page" id="landing">
                 <div className="page_width">
                     <div className="wellcome">
-                        <h1>All-in-one subscription for premium services</h1>
+                        <h1>All-in-one subscription for premium apps</h1>
                         <p>Simplify your online life with our single subscription solution.</p>
                         <Link to="/account"><button className="button_1">Get started</button></Link>
                         <button className="button_2" onClick={() => navigate("/Services")}>Explore services</button>

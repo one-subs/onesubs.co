@@ -8,7 +8,7 @@ import { ReactComponent as Earnings } from '../styles/images/earnings.svg';
 import { ReactComponent as Logo } from '../styles/images/logo_blue.svg';
 
 const onesubs = () => {
-    return <div className="banner">
+    return <div className="banner" >
         <Link to={process.env.REACT_APP_ONESUBS} onClick={() => window.scrollTo(0, 0)}><Logo style={{ maxWidth: '140px', maxHeight: '50px' }}/></Link>
         <p>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: '10px' }}>
