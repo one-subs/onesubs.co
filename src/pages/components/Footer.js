@@ -15,7 +15,7 @@ function Footer() {
                 <Link to={`${process.env.REACT_APP_ONESUBS}/business`} onClick={() => window.scrollTo(0, 0)}><span>Become a partner</span></Link>
                 <Link to={`${process.env.REACT_APP_ONESUBS}/terms-of-use`} onClick={() => window.scrollTo(0, 0)}><span>Terms of use</span></Link>
                 <Link to={`${process.env.REACT_APP_ONESUBS}/privacy-policy`} onClick={() => window.scrollTo(0, 0)}><span>Privacy policy</span></Link>
-                <Link to={`${process.env.REACT_APP_ONESUBS}/privacy-policy`} onClick={() => window.scrollTo(0, 0)}><span>Refund policy</span></Link>
+                <Link to={`${process.env.REACT_APP_ONESUBS}/refund-policy`} onClick={() => window.scrollTo(0, 0)}><span>Refund policy</span></Link>
             </nav>
         </footer>
     );
