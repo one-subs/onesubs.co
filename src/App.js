@@ -18,6 +18,7 @@ const Requirements = React.lazy(() => import('./pages/Requirements'));
 const About = React.lazy(() => import('./pages/About'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const Privacy = React.lazy(() => import('./pages/Privacy'));
+const Refund = React.lazy(() => import('./pages/Refund'));
 
 const Users = React.lazy(() => import('./users/Users'));
 
@@ -36,6 +37,7 @@ function App() {
           <Route path="/Business-rules" element={<><Navigation /><Rules /></>} />
           <Route path="/Business-requirements" element={<><Navigation /><Requirements /></>} />
           <Route path="/Privacy-policy" element={<><Navigation /><Privacy /></>} />
+          <Route path="/Refund-policy" element={<><Navigation /><Refund /></>} />
           <Route path="/Account/*" element={<Users />} />
           <Route path="*" element={<><Navigation /><NotFound /></>} />
         </Routes>
