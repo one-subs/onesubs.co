@@ -127,8 +127,9 @@
   animation-delay: 0.3s;
   visibility: hidden;
   animation-fill-mode: forwards;
-  border-radius: 20px;
   background: rgb(30,41,59);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .landing_page .page_width .wellcome .card h2 {

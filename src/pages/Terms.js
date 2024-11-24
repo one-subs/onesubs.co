@@ -44,8 +44,11 @@ function Terms() {
           <h2>12. Contact Information</h2>
           <p>For support or any questions, users can email our support team at support@onesubs.co as well as for partners business@onesubs.co. In the future, we plan to integrate AI to assist our users more efficiently.</p>
           <h2>13. Final Provisions</h2>
-          <p style={{marginBottom: "50px"}}>These Terms of Use constitute the entire agreement between you and OneSubs regarding the use of our services. If any part of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect.</p>
-      </div>
+          <p>These Terms of Use constitute the entire agreement between you and OneSubs regarding the use of our services. If any part of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect.</p>
+          <h2>14. Legal Information</h2>
+          <p>This agreement is entered into by Omurzak Keldibekov, the account owner and operator of this service.</p>
+          <p style={{marginBottom: "50px"}}><strong>Email: </strong>omurzak.keldibek@gmail.com</p>
+          </div>
     </>
   );
 }
