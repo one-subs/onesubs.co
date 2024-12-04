@@ -43,7 +43,7 @@ function Pricing({ more }) {
                 <div className="price_list">
 
                     <div className="card" style={{ height: '400px' }}>
-                        <h3>Basic</h3>
+                        <h3>Basic <span style={{ color: "#334155", fontSize: "18px" }}>(one S tier/24 hours)</span></h3>
                         <div className="price">
                             <span className="symbol">$</span><span className='number'>{floatToIntIfDecimal(price("Basic", 30))}</span><span className="month">/mo</span>
                         </div>
@@ -69,7 +69,7 @@ function Pricing({ more }) {
                     </div>
                     
                     <div className="card" style={{ height: '400px' }}>
-                        <h3>Standard</h3>
+                        <h3>Standard <span style={{ color: "#334155", fontSize: "18px" }}>(one M, two S)</span></h3>
                         <div className="price">
                             <span className="symbol">$</span><span className='number'>{floatToIntIfDecimal(price("Standard", 30))}</span><span className="month">/mo</span>
                         </div>
@@ -99,7 +99,7 @@ function Pricing({ more }) {
                     </div>
                     
                     <div className="card" style={{ height: '400px' }}>
-                        <h3>Premium</h3>
+                        <h3>Premium <span style={{ color: "#334155", fontSize: "18px" }}>(1L, 2M, 4S)</span></h3>
                         <div className="price">
                             <span className="symbol">$</span><span className='number'>{floatToIntIfDecimal(price("Premium", 30))}</span><span className="month">/mo</span>
                         </div>
@@ -144,7 +144,7 @@ function Pricing({ more }) {
                 <div className="price_list" style={{ marginTop: '100px' }}>
 
                     <div className="card" style={{ height: '490px' }}>
-                        <h3>Pro</h3>
+                        <h3>Pro <span style={{ color: "#334155", fontSize: "18px" }}>(XL, 2L, 4M, 8S)</span></h3>
                         <div className="price">
                             <span className="symbol">$</span><span className='number'>{floatToIntIfDecimal(price("Pro", 30))}</span><span className="month">/mo</span>
                         </div>
@@ -189,7 +189,7 @@ function Pricing({ more }) {
                     </div>
 
                     <div className="card" style={{ height: '490px' }}>
-                        <h3>Elite</h3>
+                        <h3>Elite <span style={{ color: "#334155", fontSize: "18px" }}>(XXL, XL, 3L, 6M, 13S)</span></h3>
                         <div className="price">
                             <span className="symbol">$</span><span className='number'>{floatToIntIfDecimal(price("Elite", 30))}</span><span className="month">/mo</span>
                         </div>
