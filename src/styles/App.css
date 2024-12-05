@@ -136,7 +136,7 @@
   width: 300px;
   margin-top: 0px;
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 25px;
   color: #ffffff;
   font-weight: bold;
   font-family: Playfair Display, serif;
@@ -507,7 +507,6 @@
 .pricing .page_width .price_list .card {
   width: 270px;
   margin: auto;
-  height: 470px;
   padding: 15px;
   background-color: #ffffff;
   margin-top: 100px;
@@ -538,7 +537,7 @@
 .pricing .page_width .price_list .card h3 {
   text-align: start;
   margin: 0 0 10px 0;
-  font-size: 28px;
+  font-size: 35px;
   color: #2174ea;
   font-weight: 500;
 }
