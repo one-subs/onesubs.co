@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-function Contact() {
+function Contacts() {
     return (
         <>
             <Helmet>
@@ -36,4 +36,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default Contacts;

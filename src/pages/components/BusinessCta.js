@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
+import '../../styles/description.css';
 import 'aos/dist/aos.css';
-import AOS from 'aos'; 
+import AOS from 'aos';
 import { ReactComponent as Contract } from '../../styles/images/contract.svg';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +13,7 @@ function Business() {
     }, []);
 
     return (
-        <div className="description">
+        <div className="contents">
             <div className="page_width">
                 <h1>Become a partner</h1>
                 <div className="left">
@@ -22,8 +23,8 @@ function Business() {
                 </div>
                 <div className="right">
                     <div data-aos="fade-left" data-aos-duration="1500">
-                        <p style={{marginTop: "80px", color: "#1e293b"}}>You have an online service? Let's become a partner and earn money together! Check our <Link to="/business" style={{ textDecoration: 'none', color: '#1e293b' }} onClick={() => window.scrollTo(0, 0)}><u style={{cursor: "pointer"}}>Business</u></Link> page or <Link to="/contact" style={{ textDecoration: 'none', color: '#1e293b' }} onClick={() => window.scrollTo(0, 0)}><u style={{cursor: "pointer"}}>Contact</u></Link> us directly.</p>
-                        <p style={{marginTop: "80px", color: "#1e293b"}}>Support us and collab, we promise to give you more than you think.</p>
+                        <p style={{marginTop: "80px", color: "#111111"}}>You have an online service? Let's become a partner and earn money together! Check our <Link to="/business" style={{ textDecoration: 'none', color: '#1e293b' }} onClick={() => window.scrollTo(0, 0)}><u style={{cursor: "pointer"}}>Business</u></Link> page or <Link to="/contact" style={{ textDecoration: 'none', color: '#1e293b' }} onClick={() => window.scrollTo(0, 0)}><u style={{cursor: "pointer"}}>Contact</u></Link> us directly.</p>
+                        <p style={{marginTop: "80px", color: "#111111"}}>Support us and collab, we promise to give you more than you think.</p>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,94 @@
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.document {
+  width: 100%;
+  min-height: 250px;
+  float: left;
+}
+
+.document .hat {
+  width: 100%;
+  min-height: 150px;
+  float: left;
+  background-color: #000000;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.document .hat h1 {
+  max-width: 1000px;
+  font-size: 40px;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 25px;
+}
+
+.document h1, .document h2, .document h3, .document h4 {
+  max-width: 1000px;
+  font-size: 27px;
+  color: #444444;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.document h2 {
+  font-size: 25px;
+}
+
+.document h3 {
+  font-size: 23px;
+}
+
+.document h3 {
+  font-size: 21px;
+}
+
+.document p {
+  max-width: 1000px;
+  font-size: 20px;
+  color: #333333;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.document li {
+  max-width: 1000px;
+  font-size: 20px;
+  color: #333333;
+  margin: auto;
+  margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .document .hat h1 {
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+
+  .document h1, .document h2, .document h3, .document h4, .document p {
+    width: 90%;
+  }
+}

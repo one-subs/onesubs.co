@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/footer.css';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../styles/images/logo_blue.svg';
 
@@ -7,7 +8,7 @@ function Footer() {
         <footer className="footer">
             <div>
                 <Link to={process.env.REACT_APP_ONESUBS}  onClick={() => window.scrollTo(0, 0)}><Logo style={{ maxWidth: '140px', maxHeight: '50px', float: 'left' }}/></Link>
-                <Link to="/terms-of-use" onClick={() => window.scrollTo(0, 0)}><span style={{marginTop: "18px"}}>&copy; {new Date().getFullYear()} OneSubs</span></Link>
+                <Link to={`${process.env.REACT_APP_ONESUBS}/terms-of-use`} onClick={() => window.scrollTo(0, 0)}><span style={{marginTop: "18px"}}>&copy; {new Date().getFullYear()} OneSubs</span></Link>
             </div>
             <nav className="pages">
                 <Link to={`${process.env.REACT_APP_ONESUBS}/about-us`} onClick={() => window.scrollTo(0, 0)}><span>About us</span></Link>

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import '../../styles/description.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos'; 
 import { ReactComponent as AllInOne } from '../../styles/images/all_in_one.svg';
@@ -38,7 +39,7 @@ function Description() {
     
     return (
         <>
-            <div className="description" id="overview">
+            <div className="contents" id="overview">
                 <div className="page_width">
                     <h1>What do we offer?</h1>
                     <div className="left">
@@ -54,7 +55,7 @@ function Description() {
                 </div>
             </div>
 
-            <div className="description" id="overview">
+            <div className="contents" id="overview">
                 <div className="page_width">
                     <h1>How it works?</h1>
                     <div className="left">
@@ -70,7 +71,7 @@ function Description() {
                 </div>
             </div>
 
-            <div className="description" id="overview">
+            <div className="contents" id="overview">
                 <div className="page_width">
                     <h1>Our partners</h1>
                     <div className="left">

@@ -15,7 +15,7 @@ function CreateAccount() {
     e.preventDefault();
     try {
       const response = await request("/user/registration", "POST", { email });
-      if (response) navigate("/account/verification");
+      if (response) navigate(`/account/verification?email=${ email }`);
     } catch (err) {}
   }
 

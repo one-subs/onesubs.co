@@ -1,0 +1,345 @@
+.landing {
+  float: left;
+  background-color: #111111;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.landing .page_width {
+  max-width: 1400px;
+  min-width: 390px;
+  margin: auto;
+}
+
+.landing .page_width .wellcome {
+  float: left;
+  min-height: 60vh;
+  width: 50%;
+}
+
+.landing .page_width .wellcome h1 {
+  font-size: 3.5rem;
+  width: 70%;
+  margin: auto;
+  margin-top: 150px;
+  text-align: start;
+  color: #FFFFFF;
+  font-family: Playfair Display, serif;
+  animation: fadeInLeft 1.5s ease;
+  animation-delay: 0.3s;
+}
+
+.landing .page_width .wellcome .card {
+  /* color used to softly clip top and bottom of the .words container */
+  margin-left: calc(15% - 15px);
+  background-color: var(--bg-color);
+  padding: 1rem 0rem;
+  width: 70%;
+  min-width: 415px;
+}
+
+.landing .page_width .wellcome .description {
+  color: rgb(124, 124, 124);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 40px;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landing .page_width .wellcome .description p {
+  margin-top: 0px;
+}
+
+.landing .page_width .wellcome .words {
+  overflow: hidden;
+  position: relative;
+}
+.landing .page_width .wellcome .words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    var(--bg-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--bg-color) 90%
+  );
+  z-index: 20;
+}
+
+.landing .page_width .wellcome .word {
+  display: block;
+  height: 100%;
+  padding-left: 6px;
+  color: #2174ea;
+  animation: spin_4991 12s infinite;
+}
+
+@keyframes spin_4991 {
+  6% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  16.6% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  22.6% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  33.2% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  39.2% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  49.8% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  55.8% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+
+  66.4% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+
+  72.4% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-502%);
+  }
+
+  83% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-500%);
+  }
+
+  89% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-602%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-600%);
+  }
+}
+
+.landing .page_width .wellcome button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #2174ea;
+  margin: 0px 10px 0 calc(15% - 5px);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.landing .page_width .wellcome button:hover {
+  background: rgb(33, 116, 238);
+  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.landing .page_width .wellcome button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.landing .page_width .wellcome button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.landing .page_width .wellcome button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+.landing .page_width .banner {
+  float: left;
+  width: 50%;
+  padding-top: 200px;
+  display: block;
+}
+
+.landing .page_width .banner .card {
+  width: 400px;
+  height: 250px;
+  background-color: #2174ea;
+  background-image: linear-gradient(
+    43deg,
+    #000000 0%,
+    #2174ea 46%,
+    #000000 100%
+  );
+  border-radius: 8px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  transform: translate3d(7%, -2%, 0px) scale3d(0.9, 0.8, 1) rotateX(15deg)
+    rotateY(-9deg) rotateZ(32deg);
+}
+
+.landing .page_width .banner .card-content {
+  padding: 20px;
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.landing .page_width .banner .card-content .card-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.landing .page_width .banner .card-content .card-para {
+  color: inherit;
+  opacity: 0.8;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.landing .page_width .banner .card:hover {
+  transform: rotateY(0) rotateX(0) scale(1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.landing .page_width .banner .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+}
+
+.landing .page_width .banner .card:hover:before {
+  transform: translateX(-100%);
+}
+
+.landing .page_width .banner .card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+}
+
+.landing .page_width .banner .card:hover:after {
+  transform: translateX(100%);
+}
+
+@media only screen and (max-width: 900px) {
+  .landing .page_width .wellcome {
+    width: 100%;
+    min-height: 25vh;
+  }
+
+  .landing .page_width .wellcome h1 {
+    width: 80%;
+    margin-top: 75px;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+
+  .landing .page_width .wellcome .card {
+    width: 90%;
+    min-width: 100px;
+    margin-left: calc(10% - 15px);
+    padding: 0px;
+  }
+  
+  .landing .page_width .wellcome .description {
+    font-size: 25px;
+  }
+
+  .landing .page_width .wellcome button {
+    margin: 0px 10px 0 calc(10% - 5px);
+  }
+}
+  

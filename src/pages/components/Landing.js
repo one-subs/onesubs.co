@@ -1,79 +1,60 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import '../../styles/landing.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 function Landing() {
-    const navigate = useNavigate();
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
-  
-    useEffect(() => {
-      const handleResize = () => {
-        setIsMobile(window.innerWidth <= 900);
-      };
-  
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }, []);
 
+    useEffect(() => {
+        AOS.init(); // Initialize AOS
+        AOS.refresh(); // Refresh AOS in case the content changes
+    }, []);
+    
+    useEffect(() => {
+        const handleResize = () => {
+          setIsMobile(window.innerWidth <= 900);
+        };
+    
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    
     return (
-        <>
-            <div className="landing_page" id="landing">
-                <div className="page_width">
-                    <div className="wellcome">
+        <div className="landing">
+            <div className="page_width">
+                <div className="wellcome">
+                    <div data-aos={isMobile ? "" : "fade-right"} data-aos-duration="1500">
                         <h1>All-in-one subscription for premium apps</h1>
-                        <p>Simplify your online life with our single subscription solution.</p>
-                        <Link to="/account"><button className="button_1">Get started</button></Link>
-                        <button className="button_2" onClick={() => navigate("/Services")}>Explore services</button>
-                    </div>
-                    {isMobile ? "" : <div className="wellcome">
-                        <div className="outline"/>
                         <div className="card">
-                            <h2>From $15/mo</h2>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
-                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                </svg>
-                                Access for various services</p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
-                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                </svg>
-                                Use for 24 hours</p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
-                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                </svg>
-                                Get new access at 00:00</p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
-                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                </svg>
-                                Use same or another service</p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
-                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                </svg>
-                                Five different service tiers</p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
-                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                </svg>
-                                Tiers: S, M, L, XL and XXL</p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
-                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                </svg>
-                                Flexible subscription options</p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#10b981" className="bi bi-check-lg" viewBox="0 0 16 9" style={{ marginRight: "8px" }}>
-                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-                                </svg>
-                                Affordable prices for everyone</p>
-                        </div>    
-                    </div>}
+                            <div className="description">
+                                <p>Get access to</p>
+                                <div className="words">
+                                    <span className="word">AI tools</span>
+                                    <span className="word">Online editors</span>
+                                    <span className="word">Design tools</span>
+                                    <span className="word">Research tools</span>
+                                    <span className="word">Marketing tools</span>
+                                    <span className="word">Entertainments</span>
+                                    <span className="word">AI tools</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button className='start_button'>Sign up for early access!</button>
+                    </div>
                 </div>
+                {isMobile ? "" : <div className="banner">
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                        <div className="card">
+                            <div className="card-content">
+                                <p className="card-title">save your money</p>
+                                <p className="card-para">Explore our partner services and get your subscription.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>}
             </div>
-        </>
+        </div>
     );
 }
 

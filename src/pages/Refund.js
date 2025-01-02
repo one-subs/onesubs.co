@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 
-function Rules() {
+function Refund() {
   return (
     <>
       <Helmet>
@@ -40,4 +40,4 @@ function Rules() {
   );
 }
 
-export default Rules;
+export default Refund;

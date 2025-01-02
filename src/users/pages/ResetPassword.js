@@ -1,5 +1,6 @@
-import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import CryptoJS from 'crypto-js';
 import useHttp from "../../hooks/http.hook";
 import Alert from "./components/Alert.js";
 import { ReactComponent as Question } from '../styles/images/question.svg';
@@ -11,11 +12,16 @@ function ResetPassword() {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
+  const encryptData = (data) => {
+    const ciphertext = CryptoJS.AES.encrypt(data, process.env.REACT_APP_SECRET).toString();
+    return ciphertext;
+  }
+
   const reset = async (e) => {
     e.preventDefault();
     try {
       const response = await request("/user/reset-password", "POST", { email });
-      if (response) navigate("/account/verification");
+      if (response) navigate(`/account/verification?email=${ encryptData(email) }`);
     } catch (err) {}
   }
 

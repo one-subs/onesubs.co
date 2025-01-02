@@ -1,0 +1,95 @@
+.business_header {
+    float: left;
+    text-align: center;
+    min-height: 500px;
+    width: 100%;
+    padding-bottom: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 32, 71, 0.93), rgba(0, 0, 0, 0.95)), url("./images/office.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgba(30, 41, 59, 0.5);
+}
+
+.business_header h1 {
+    font-size: 45px;
+    width: 70%;
+    margin: auto;
+    margin-top: 200px;
+    color: #ffffff;
+}
+
+.business_header p {
+    font-size: 1.5rem;
+    width: 55%;
+    margin: auto;
+    margin-top: 20px;
+    color: #94a3b8;
+}
+
+.btn-blue {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(141, 178, 238); /* Lighter shade closer to #2174ea */
+    --btn-bg-2: hsla(217, 100%, 50%, 1); /* Main color #2174ea */
+    --btn-bg-color: hsla(360, 100%, 100%, 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    margin: 25px 10px;
+    font-size: var(--size, 1rem);
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+      325deg,
+      var(--btn-bg-2) 0%,
+      var(--btn-bg-1) 55%,
+      var(--btn-bg-2) 90%
+    );
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow:
+      0px 0px 20px rgba(33, 116, 234, 0.5), /* Updated shadow colors */
+      0px 5px 5px -1px rgba(33, 116, 234, 0.25),
+      inset 4px 4px 8px rgba(80, 140, 240, 0.5),
+      inset -4px -4px 8px rgba(20, 100, 220, 0.35);
+}
+
+.btn-blue:hover {
+    background-position: right top;
+}
+
+.btn-blue:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow:
+      0 0 0 3px var(--btn-bg-color),
+      0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-blue {
+        transition: linear;
+    }
+}
+
+
+  
+
+@media only screen and (max-width: 900px) {
+    .business_header {
+        background-size: 1450px;
+        background-position: center;
+        min-height: 250px;
+    }
+  
+    .business_header h1 {
+        margin-top: 75px;
+        font-size: 30px;
+    }
+  
+    .business_header p {
+        width: 100%;
+    }
+}

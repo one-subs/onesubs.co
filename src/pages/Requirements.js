@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import blue from '../styles/images/onesubs-logo-blue.png';
 import white from '../styles/images/onesubs-logo-white.png';
 
-function Rules() {
+function Requirements() {
   return (
     <>
       <Helmet>
@@ -62,4 +62,4 @@ function Rules() {
   );
 }
 
-export default Rules;
+export default Requirements;

@@ -1,10 +1,9 @@
-import React from 'react';
 import { Helmet } from "react-helmet";
 import Landing from './components/Landing';
 import Description from './components/Description';
-import Pricing from './Pricing';
 import Cta from './components/Cta';
-import Business from './components/Business';
+import Pricing from './components/Pricing';
+import BusinessCta from './components/BusinessCta';
 
 function Opening() {
   return (
@@ -17,8 +16,8 @@ function Opening() {
       <Landing/>
       <Description/>
       <Cta/>
-      <Pricing/>
-      <Business/>
+      <Pricing bottom={"200px"}/>
+      <BusinessCta/>
     </>
   );
 }

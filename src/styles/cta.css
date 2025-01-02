@@ -1,0 +1,102 @@
+.cta {
+    float: left;
+    text-align: center;
+    min-height: 300px;
+    width: 100%;
+    background-color: #f1f5f9;
+}
+  
+.cta .page_width {
+    max-width: 1400px;
+    min-width: 390px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+  
+.cta .page_width h1 {
+    font-size: 45px;
+    color: #444444;
+    text-align: start;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.cta .page_width p {
+    font-size: 1.5rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    color: #444444;
+    display: block;
+}
+
+.cta .page_width .button {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #2174ea;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+  
+.cta .page_width .button:hover {
+    box-shadow: .5px .5px 150px #252525;
+}
+
+.cta .page_width .type1::after {
+    content: "Sign up";
+    height: 50px;
+    width: 150px;
+    background-color: #2174ea;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.cta .page_width .type1::before {
+    content: "Start now";
+    height: 50px;
+    width: 150px;
+    background-color: #fff;
+    color: #2174ea;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.cta .page_width .type1:hover::after {
+    transform: translateY(0) scale(1.2);
+}
+  
+.cta .page_width .type1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+@media only screen and (max-width: 900px) {
+    .cta .page_width h1 {
+        font-size: 35px;
+    }
+    .cta .page_width p {
+        display: none;
+    }
+}

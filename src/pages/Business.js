@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import '../styles/header.css';
+import '../styles/description.css';
+import '../styles/cta.css';
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
@@ -71,14 +74,14 @@ function Business() {
         <Partner style={{ marginTop: '30px', maxWidth: '350px', maxHeight: '310px' }}/>,
         <>
             <h2>Why join us?</h2>
-            <p>Well, in statistics, more than 90% of visitors to online service skip the payments. To address the needs of both you and your visitors, we've created a single subscription plan and share the earnings with our partners.</p>
+            <p>Well, in statistics, more than 90% of visitors to online service skip the payments. To help the needs of both services and visitors, we've created a single subscription plan and share the earnings with our partners.</p>
         </>
     ];
 
     const sectionTwo = [
         onesubs(),
         <>
-            <h2>How do people use your tool via OneSubs?</h2>
+            <h2>How people access your tool via OneSubs?</h2>
             <p>In your pricing page, you will have the OneSubs option as following. User enters a one time code there (e.g., "5T423R"). If user has the subscription, you will give an access for 24 hours.</p>
         </>
     ];
@@ -106,14 +109,14 @@ function Business() {
                 <meta name="description" content="We're designing a new way to do business." />
                 <link rel="canonical" href={`${process.env.REACT_APP_ONESUBS}/business`} />
             </Helmet>
-            <div className="business_background">
+            <div className="business_header">
                 <h1>We're designing a new way to do business.</h1>
                 {isMobile ? "" : <p>Step into a new realm of collaboration and growth. We're dedicated to forging meaningful partnerships that drive mutual success.</p>}
-                <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button>Start now</button></Link>
-                <Link to="/business-requirements"><button style={{ marginLeft: "20px", backgroundColor: "#334155" }} onClick={() => window.scrollTo(0, 0)}>More info</button></Link>
+                <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button class="btn-blue">Start now</button></Link>
+                <Link to="/business-requirements"><button class="btn-blue" onClick={() => window.scrollTo(0, 0)}>More info</button></Link>
             </div>
 
-            <div className="description">
+            <div className="contents">
                 <div className="page_width">
                     <div className="left">
                         {isMobile ? sectionOne[0] : sectionOne[0]}
@@ -124,7 +127,7 @@ function Business() {
                 </div>
             </div>
 
-            <div className="description">
+            <div className="contents">
                 <div className="page_width">
                     {isMobile ? "" : <h1>
                         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#334155" className="bi bi-check2-circle" viewBox="0 0 16 16">
@@ -141,7 +144,7 @@ function Business() {
                 </div>
             </div>
 
-            <div className="description">
+            <div className="contents">
                 <div className="page_width">
                     {isMobile ? "" : <h1>
                         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#334155" className="bi bi-check2-circle" viewBox="0 0 16 16">
@@ -158,7 +161,7 @@ function Business() {
                 </div>
             </div>
 
-            <div className="description">
+            <div className="contents">
                 <div className="page_width">
                     {isMobile ? "" : <h1>
                         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#334155" className="bi bi-check2-circle" viewBox="0 0 16 16">
@@ -180,8 +183,8 @@ function Business() {
                     <h1 style={{ fontSize: "35px", color: "#2174ea" }}>Ready to join us?</h1>
                     <h1 style={{ textAlign: "center", marginBottom: "25px" }}>The smarter way to start making <span style={{color: "#10b981"}}>money</span>.</h1>
                     <p>To expand our offerings, we're looking for partners with similar services. This will allow us to provide our users with a comprehensive suite of related tools that can meet all their needs with a single subscription.</p>
-                    <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button style={{ marginRight: "20px", backgroundColor: "#2174ea" }}>Start now</button></Link>
-                    <Link to="/business-requirements"><button onClick={() => window.scrollTo(0, 0)}>More info</button></Link>
+                    <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button class="btn-blue">Start now</button></Link>
+                    <Link to="/business-requirements"><button class="btn-blue" onClick={() => window.scrollTo(0, 0)}>More info</button></Link>
                 </div>
             </div>
         </>

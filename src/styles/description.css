@@ -1,0 +1,138 @@
+.contents {
+    float: left;
+    text-align: center;
+    min-height: 500px;
+    width: 100%;
+}
+
+.contents .page_width {
+    max-width: 1400px;
+    min-width: 390px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+  
+.contents .page_width h1 {
+    font-size: 45px;
+    color: #333333;
+    font-family: Playfair Display, serif;
+}
+  
+.contents .page_width .left, 
+.contents .page_width .right {
+    margin: 20px 0;
+    float: left;
+    text-align: center;
+    align-items: center;
+    min-height: 500px;
+    width: 50%;
+    overflow: hidden;
+}
+  
+.contents .page_width .left {
+    border-right: 1px solid #94a3b8;
+    width: calc(50% - 2px);
+}
+  
+.contents .page_width .left h2, 
+.contents .page_width .right h2 {
+    font-size: 2.2rem;
+    width: 70%;
+    margin: auto;
+    padding-top: 80px;
+    text-align: start;
+    color: #444444;
+}
+  
+.contents .page_width p, 
+.contents .page_width p {
+    font-size: 1.5rem;
+    text-align: start;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #94a3b8;
+}
+  
+@media only screen and (max-width: 900px) {
+    .contents .page_width h1 {
+        font-size: 2.5em;
+        width: 90%;
+        margin-left: 5%;
+    }
+  
+    .contents .page_width .left, 
+    .contents .page_width .right {
+        width: 100%;
+        min-height: 250px;
+        margin: 0;
+    }
+  
+    .contents .page_width .left {
+        border: 0;
+    }
+  
+    .contents .page_width .right {
+        margin-bottom: 100px;
+    }
+  
+    .contents .page_width .left h2, 
+    .contents .page_width .right h2 {
+        width: 80%;
+        font-size: 1.8rem;
+    }
+    
+    .contents .page_width .left p,  
+    .contents .page_width .right p {
+        width: 80%;
+    }
+}
+
+.contents .page_width .right .banner,
+.contents .page_width .left .banner {
+  width: 350px;
+  min-height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  padding: 20px 0px;
+}
+
+.contents .page_width .right .banner input[type=text],
+.contents .page_width .left .banner input[type=text] {
+  width: calc(50% - 20px);
+  height: 35px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #94a3b8;
+  border-right: none;
+}
+
+.contents .page_width .right .banner button,
+.contents .page_width .left .banner button {
+  width: 30%;
+  height: 37px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #444444;
+  background-color: #444444;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.contents .page_width .right .banner p,
+.contents .page_width .left .banner p {
+  font-size: 1.1rem;
+  text-align: start;
+  width: 80%;
+  margin: 0 10%;
+  margin-bottom: 10px;
+  color: #64748b;
+}

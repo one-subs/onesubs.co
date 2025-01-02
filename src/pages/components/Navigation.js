@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import '../../styles/navigation.css';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../styles/images/logo_blue.svg';
 
@@ -31,7 +32,7 @@ function Navigation() {
     const desktopMenu = (
         <div className="pages">
             <Link to="/services"><span>Services</span></Link>
-            <Link to="/pricing"><span>Pricing</span></Link>
+            <a href={`${process.env.REACT_APP_ONESUBS}/#pricing`}><span>Pricing</span></a>
             <Link to="/business"><span>Business</span></Link>
             <Link to="/account"><span>Account</span></Link>
         </div>
@@ -41,11 +42,13 @@ function Navigation() {
         <div className="menu">
             <div className="pages">
                 <Link to="/services"><span onClick={() => setDisplay(false)}>Services</span></Link>
-                <Link to="/pricing"><span onClick={() => setDisplay(false)}>Pricing</span></Link>
+                <a href={`${process.env.REACT_APP_ONESUBS}/#pricing`}><span onClick={() => setDisplay(false)}>Pricing</span></a>
                 <Link to="/business"><span onClick={() => setDisplay(false)}>Business</span></Link>
             </div>
             <div className="pages">
                 <Link to="/account"><span onClick={() => document.body.style.overflowY="auto"}>Account</span></Link>
+            </div>
+            <div className="pages">
                 <Link to="/contact"><span onClick={() => setDisplay(false)}>Contact</span></Link>
                 <Link to="/about-us"><span onClick={() => setDisplay(false)}>About us</span></Link>
                 <Link to="/terms-of-use"><span onClick={() => setDisplay(false)}>Terms of use</span></Link>

@@ -1,0 +1,47 @@
+.footer {
+    max-width: calc(1400px - 10%);
+    margin: auto;
+    padding: 15px 5%;
+    padding-top: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.footer span {
+    float: left;
+    color: #94a3b8;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 5px 10px;
+}
+
+.footer span:hover {
+    color: #2174ea;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        padding: 0;
+        margin: 0 5%;
+        float: left;
+        width: 90%;
+        display: block;
+    }
+  
+    .footer .pages {
+        float: left;
+        border-top: 1px solid #64748b;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+  
+    .footer .pages span {
+        width: 100%;
+        margin: 7px 0;
+    }
+}

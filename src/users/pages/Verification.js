@@ -1,4 +1,4 @@
-import { useState, useRef, useContext } from 'react';
+import { useState, useRef, useContext, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 
 import AuthContext from "../../context/AuthContext";
@@ -19,6 +19,11 @@ function Verification() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const timeoutRef = useRef(null);
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    setEmail(searchParams.get('email'));
+  }, []);
 
   const verify = async (e) => {
     e.preventDefault();
@@ -41,13 +46,10 @@ function Verification() {
 
             <h1>Verify</h1>
 
-            <div className="input-container">
-              <input type="text" name="email" onChange={(e) => setEmail(e.target.value)} required/>
-              <label htmlFor="input">Email</label>
-            </div>
+            <p style={{ fontSize: "15px", marginBottom: "35px", width: "100%", color: "#666666" }}>Email: {email}</p>
 
             <div className="input-container">
-              <input type="number" name="code" onChange={(e) => setVerification(e.target.value)} required/>
+              <input type="number" name="code" onChange={(e) => setVerification(e.target.value)} verification={verification} required/>
               <label htmlFor="input">Verification code</label>
             </div>
 

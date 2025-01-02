@@ -1,0 +1,193 @@
+.pricing {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    background-color: #111111;
+    text-align: center;
+}
+
+.pricing .page_width {
+    max-width: 1400px;
+    min-width: 390px;
+    margin: auto;
+}
+
+.pricing .page_width h1 {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    margin-top: 100px;
+    background: linear-gradient(to right, #9f9f9f 0, #ffffff 10%, #868686 20%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    text-align: center;
+    white-space: nowrap;
+}
+  
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    60% {
+        background-position: 1000px;
+    }
+    100% {
+        background-position: 1000px;
+    }
+}
+
+.pricing .page_width .description {
+  font-size: 1.5rem;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  color: #a8b0ba;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+.pricing .page_width .price_list {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-bottom: -200px;
+}
+
+.pricing .page_width .price_list .card {
+    width: 150px;
+    height: 190px;
+    margin: auto;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    text-align: start;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.pricing .page_width .price_list .card h1 {
+    color: #2174ea;
+    font-family: Arial;
+    font-weight: 300;
+    margin: 5px 0px 0px 5px;
+    font-size: 40px;
+    text-align: start;
+}
+
+.pricing .page_width .price_list .card p {
+    color: #444444;
+    font-weight: 500;
+    margin: 5px 0px;
+    font-size: 15px;
+}
+
+.pricing .page_width .price_list .card .price {
+  margin: 0px;
+  font-size: 40px;
+  color: #111111;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+
+.pricing .page_width .price_list .card .month {
+    color: #64748b;
+    font-size: 20px;
+}
+
+.pricing .page_width .price_list .card .button {
+    position: relative;
+    overflow: hidden;
+    height: 2.5rem;
+    width: 150px;
+    margin-top: 15px;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #000000;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.pricing .page_width .price_list .card .button:hover::before {
+    transform: scaleX(1);
+}
+
+.pricing .page_width .price_list .card .button-content {
+    position: relative;
+    z-index: 1;
+}
+
+.pricing .page_width .price_list .card .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      #000000 10.8%,
+      #2174ea 94.3%
+    );
+    transition: all 0.475s;
+}
+
+@media only screen and (max-width: 600px) {
+    .pricing .page_width h1 {
+        font-size: 2.5rem;
+        font-weight: 550;
+        font-family: Arial;
+        text-align: start;
+        white-space: wrap;
+    }
+  
+    .pricing .page_width .price_list {
+        margin-top: 0;
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+        align-items: center;
+    }
+
+    .pricing .page_width .price_list .card {
+        margin: 50px auto;
+    }
+
+    @keyframes shine {
+        0% {
+            background-position: 0;
+        }
+        60% {
+            background-position: 260px;
+        }
+        100% {
+            background-position: 260px;
+        }
+    }
+
+    
+    .pricing .page_width .description {
+        display: none;
+    }
+}

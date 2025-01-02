@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,25 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  min-width: 390px;
-  box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.global-error {
-  color: #334155;
-  text-align: center;
-  width: 90%;
-  margin: auto;
-  margin-top: 100px;
-}
-
-.global-error a {
-  color: #334155;
 }

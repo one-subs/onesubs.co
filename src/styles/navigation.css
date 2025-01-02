@@ -1,0 +1,51 @@
+
+.navbar {
+    max-width: calc(1400px - 10%);
+    margin: auto;
+    padding: 10px 5%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -70px;
+}
+  
+.navbar span {
+    float: left;
+    color: #94a3b8;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 10px;
+    text-decoration: none;
+}
+  
+.navbar span:hover {
+    color: #2174ea;
+}
+  
+.navbar .menu {
+    position: fixed;
+    top:70px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index: 2;
+    background-color: #ffffff
+}
+  
+.navbar .menu .pages {
+    width: 90%;
+    margin: 0 5%;
+    padding: 10px 0;
+    border-bottom: 1px solid #64748b;
+    float: left;
+}
+  
+.navbar .menu .pages span {
+    width: 100%;
+    margin: 7px 0;
+    color: #111111;
+    text-decoration: none;
+}
+  

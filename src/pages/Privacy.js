@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 
-function Rules() {
+function Privacy() {
   return (
     <>
       <Helmet>
@@ -190,4 +190,4 @@ function Rules() {
   );
 }
 
-export default Rules;
+export default Privacy;
