@@ -1,4 +1,5 @@
 import '../../styles/pricing.css';
+import { Link } from 'react-router-dom';
 
 function Pricing({ bottom }) {
   return (
