@@ -31,13 +31,13 @@ function Landing() {
                             <div className="description">
                                 <p>Get access to</p>
                                 <div className="words">
-                                    <span className="word">AI tools</span>
                                     <span className="word">Online editors</span>
-                                    <span className="word">Design tools</span>
+                                    <span className="word">AI instruments</span>
+                                    <span className="word">Design apps</span>
                                     <span className="word">Research tools</span>
                                     <span className="word">Marketing tools</span>
                                     <span className="word">Entertainments</span>
-                                    <span className="word">AI tools</span>
+                                    <span className="word">Online editors</span>
                                 </div>
                             </div>
                         </div>
@@ -48,8 +48,8 @@ function Landing() {
                     <div data-aos="fade-left" data-aos-duration="1500">
                         <div className="card">
                             <div className="card-content">
-                                <p className="card-title">save your money</p>
-                                <p className="card-para">Explore our partner services and get your subscription.</p>
+                                <p className="card-title">save your money!</p>
+                                <p className="card-para">Get access with one subscription card for multiple services.</p>
                             </div>
                         </div>
                     </div>

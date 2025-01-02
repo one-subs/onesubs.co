@@ -112,8 +112,8 @@ function Business() {
             <div className="business_header">
                 <h1>We're designing a new way to do business.</h1>
                 {isMobile ? "" : <p>Step into a new realm of collaboration and growth. We're dedicated to forging meaningful partnerships that drive mutual success.</p>}
-                <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button class="btn-blue">Start now</button></Link>
-                <Link to="/business-requirements"><button class="btn-blue" onClick={() => window.scrollTo(0, 0)}>More info</button></Link>
+                <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button className="btn-blue">Start now</button></Link>
+                <Link to="/business-requirements"><button className="btn-blue" onClick={() => window.scrollTo(0, 0)}>More info</button></Link>
             </div>
 
             <div className="contents">
@@ -183,8 +183,8 @@ function Business() {
                     <h1 style={{ fontSize: "35px", color: "#2174ea" }}>Ready to join us?</h1>
                     <h1 style={{ textAlign: "center", marginBottom: "25px" }}>The smarter way to start making <span style={{color: "#10b981"}}>money</span>.</h1>
                     <p>To expand our offerings, we're looking for partners with similar services. This will allow us to provide our users with a comprehensive suite of related tools that can meet all their needs with a single subscription.</p>
-                    <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button class="btn-blue">Start now</button></Link>
-                    <Link to="/business-requirements"><button class="btn-blue" onClick={() => window.scrollTo(0, 0)}>More info</button></Link>
+                    <Link to={`${process.env.REACT_APP_BUSINESS}/`}><button className="btn-blue">Start now</button></Link>
+                    <Link to="/business-requirements"><button className="btn-blue" onClick={() => window.scrollTo(0, 0)}>More info</button></Link>
                 </div>
             </div>
         </>

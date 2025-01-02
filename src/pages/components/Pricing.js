@@ -13,8 +13,8 @@ function Pricing({ bottom }) {
                     <p>(one S tier/24 hours)</p>
                     <span className="price">$15</span><span className="month">/mo</span>
                     <Link to="/account">
-                        <button class="button">
-                            <span class="button-content">Get started!</span>
+                        <button className="button">
+                            <span className="button-content">Get started!</span>
                         </button>
                     </Link>
                 </div>
@@ -23,8 +23,8 @@ function Pricing({ bottom }) {
                     <p>(one M, two S)</p>
                     <span className="price">$21</span><span className="month">/mo</span>
                     <Link to="/account">
-                        <button class="button">
-                            <span class="button-content">Get started!</span>
+                        <button className="button">
+                            <span className="button-content">Get started!</span>
                         </button>
                     </Link>
                 </div>
@@ -33,8 +33,8 @@ function Pricing({ bottom }) {
                     <p>(1L, 2M, 4S)</p>
                     <span className="price">$36</span><span className="month">/mo</span>
                     <Link to="/account">
-                        <button class="button">
-                            <span class="button-content">Get started!</span>
+                        <button className="button">
+                            <span className="button-content">Get started!</span>
                         </button>
                     </Link>
                 </div>
@@ -43,8 +43,8 @@ function Pricing({ bottom }) {
                     <p>(XL, 2L, 4M, 8S)</p>
                     <span className="price">$69</span><span className="month">/mo</span>
                     <Link to="/account">
-                        <button class="button">
-                            <span class="button-content">Get started!</span>
+                        <button className="button">
+                            <span className="button-content">Get started!</span>
                         </button>
                     </Link>
                 </div>
@@ -53,8 +53,8 @@ function Pricing({ bottom }) {
                     <p>(XXL, XL, 3L, 6M, 13S)</p>
                     <span className="price">$115</span><span className="month">/mo</span>
                     <Link to="/account">
-                        <button class="button">
-                            <span class="button-content">Get started!</span>
+                        <button className="button">
+                            <span className="button-content">Get started!</span>
                         </button>
                     </Link>
                 </div>
