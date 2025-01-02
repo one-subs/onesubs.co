@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/landing.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
@@ -40,7 +41,7 @@ function Landing() {
                                 </div>
                             </div>
                         </div>
-                        <button className='start_button'>Sign up for early access!</button>
+                        <Link to="/account"><button className='start_button'>Sign up for early access!</button></Link>
                     </div>
                 </div>
                 {isMobile ? "" : <div className="banner">

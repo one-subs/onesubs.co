@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+
 import useHttp from "../../hooks/http.hook";
+
 import Alert from "./components/Alert.js";
 import { ReactComponent as Join } from '../styles/images/join.svg';
+
+import Loading from "../../pages/Loading.js";
 
 function CreateAccount() {
 
@@ -10,14 +14,21 @@ function CreateAccount() {
 
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const create = async (e) => {
     e.preventDefault();
     try {
+      setLoading(true);
       const response = await request("/user/registration", "POST", { email });
-      if (response) navigate(`/account/verification?email=${ email }`);
+      if (response) {
+        setLoading(false);
+        navigate(`/account/verification?email=${ email }`);
+      }
     } catch (err) {}
   }
+
+  if (loading) return <Loading/>;
 
   return (
     <div className="user">

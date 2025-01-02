@@ -8,6 +8,8 @@ import useHttp from "../../hooks/http.hook";
 import Alert from "./components/Alert.js";
 import { ReactComponent as LoginImage } from '../styles/images/login.svg';
 
+import Loading from "../../pages/Loading.js";
+
 function Login() {
 
   const auth = useContext(AuthContext);
@@ -16,12 +18,15 @@ function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
   
   const login = async (e) => {
     e.preventDefault();
     try {
+      setLoading(true);
       const response = await request("/user/login", "POST", { email, password });
       if (response) {
+        setLoading(false);
         auth.login(response.token, response.userId);
         navigate("/account");
       }
@@ -30,14 +35,18 @@ function Login() {
 
   const googleAccount = async (credential) => {
     try {
+      setLoading(true);
       const response = await request("/user/google-account", "POST", { credential });
       if (response) {
+        setLoading(false);
         auth.login(response.token, response.userId);
         navigate("/account");
       }
     } catch (err) {}
   }
 
+  if (loading) return <Loading/>;
+  
   return (
     <div className="user">
       {error ? <Alert message={error} type={"error"} clearError={clearError}/> : ""}

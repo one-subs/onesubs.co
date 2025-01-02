@@ -5,8 +5,9 @@ import AuthContext from "../../context/AuthContext";
 import useHttp from "../../hooks/http.hook.js";
 
 import Alert from "./components/Alert.js";
-
 import { ReactComponent as Mail } from '../styles/images/mail.svg';
+
+import Loading from "../../pages/Loading.js";
 
 function Verification() {
 
@@ -18,6 +19,7 @@ function Verification() {
   const [verification, setVerification] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
   const timeoutRef = useRef(null);
 
   useEffect(() => {
@@ -28,13 +30,17 @@ function Verification() {
   const verify = async (e) => {
     e.preventDefault();
     try {
+      setLoading(true);
       const response = await request("/user/verification", "POST", { email, verification, password });
       if (response) {
+        setLoading(false);
         auth.login(response.token, response.userId);
         navigate("/account");
       };
     } catch (err) {}
   }
+
+  if (loading) return <Loading/>;
 
   return (
     <div className="user">

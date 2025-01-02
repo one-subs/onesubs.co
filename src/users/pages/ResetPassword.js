@@ -1,23 +1,34 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 import useHttp from "../../hooks/http.hook";
+
 import Alert from "./components/Alert.js";
 import { ReactComponent as Question } from '../styles/images/question.svg';
+
+import Loading from "../../pages/Loading.js";
 
 function ResetPassword() {
 
   const { request, error, clearError } = useHttp();
 
-  const [email, setEmail] = useState("");
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const reset = async (e) => {
     e.preventDefault();
     try {
+      setLoading(true);
       const response = await request("/user/reset-password", "POST", { email });
-      if (response) navigate(`/account/verification?email=${ email }`);
+      if (response) {
+        setLoading(false);
+        navigate(`/account/verification?email=${ email }`);
+      }
     } catch (err) {}
   }
+
+  if (loading) return <Loading/>;
 
   return (
     <div className="user">
