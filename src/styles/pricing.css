@@ -71,7 +71,7 @@
 
 .pricing .page_width .price_list .card {
     width: 150px;
-    height: 190px;
+    min-height: 190px;
     margin: auto;
     padding: 15px;
     background-color: #ffffff;
