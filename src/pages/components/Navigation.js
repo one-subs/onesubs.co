@@ -21,14 +21,6 @@ function Navigation() {
         document.body.style.overflowY = display ? "hidden" : "auto";
     }, [display]);
 
-    const menuIcon = (
-        <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-    );
-
-    const closeIcon = (
-        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-    );
-
     const desktopMenu = (
         <div className="pages">
             <Link to="/services"><span>Services</span></Link>
@@ -63,22 +55,14 @@ function Navigation() {
                 <Logo style={{ maxWidth: '140px', maxHeight: '50px' }}/>
             </Link>
             {isMobile ? (
-                <>
-                    <svg 
-                        onClick={() => setDisplay(!display)} 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="35" 
-                        height="35" 
-                        fill="#64748b" 
-                        className="bi bi-list" 
-                        viewBox="0 0 16 16"
-                        aria-label={display ? "Close menu" : "Open menu"}
-                        role="button"
-                    >
-                        {display ? closeIcon : menuIcon}
+                <label className="hamburger">
+                    <input type="checkbox" checked={display} onChange={() => setDisplay(!display)}/>
+                    <svg viewBox="0 0 30 30" width="40" height="40" >
+                        <path className="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path className="line" d="M7 16 27 16"></path>
                     </svg>
                     {display && mobileMenu}
-                </>
+                </label>
             ) : (
                 desktopMenu
             )}
