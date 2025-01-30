@@ -51,7 +51,7 @@ function CreateAccount() {
             
             <h5 style={{ textAlign: "center", fontSize: "15px", fontWeight: "400" }}>Enter your email and receive the verification code to continue registration.</h5>
             
-            <button onClick={(e) => create(e)} style={{ margin: "0px" }}>Create</button>
+            <button onClick={(e) => create(e)} style={{ margin: "0px" }}><span>Create</span></button>
 
           </div>
         </div>

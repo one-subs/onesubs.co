@@ -51,7 +51,7 @@ function ResetPassword() {
 
             <h5 style={{ textAlign: "start", fontSize: "15px", fontWeight: "400" }}>No worries! We've got you covered. If you've forgotten your password, simply enter your email, and we'll send you verification code to create new password.</h5>
             
-            <button onClick={(e) => reset(e)} style={{ margin: "0px" }}>Reset</button>
+            <button onClick={(e) => reset(e)} style={{ margin: "0px" }}><span>Reset</span></button>
 
           </div>
         </div>

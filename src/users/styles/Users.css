@@ -214,34 +214,69 @@
     color: #1e293b;
 }
   
-.user .form span {
+.user .form .header span {
     font-size: 17px;
     color: #1e293b;
     padding: 1px 0;
     cursor: pointer;
 }
   
-.user .form span:hover {
+.user .form .header span:hover {
     border-bottom: 1px solid #1e293b;
 }
-  
+
 .user .form button {
-    margin-top: 20px;
-    margin-bottom: 35px;
-    height: 45px;
-    background-color: #2174ea;
-    color: #ffffff;
-    border: #2174ea;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 15px auto 30px auto;
+    border: 1px solid #111111;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
     cursor: pointer;
-    font-size: 17px;
-    text-align: center;
-    line-height: 45px;
-    letter-spacing: 0.55px;
-    padding: 0 20px;
+    background-color: #ffffff;
 }
-  
-.user .form button:hover {
-    background-color: #005de2;
+
+.user .form button::before,
+.user .form button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.user .form button::before {
+    left: -10px;
+    background: #222222;
+}
+
+.user .form button::after {
+    right: -10px;
+    background: #2174ea;
+}
+
+.user .form button:hover::before,
+.user .form button:hover::after {
+    width: 58%;
+}
+
+.user .form button:hover span {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.user .form button span {
+    color: #111111;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
 }
 
 

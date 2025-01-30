@@ -69,7 +69,7 @@ function Verification() {
               <label htmlFor="input">Create password</label>
             </div>
 
-            <button onClick={(e) => verify(e)} style={{ marginBottom: "20px" }}>Create</button>
+            <button onClick={(e) => verify(e)} style={{ marginBottom: "20px" }}><span>Save</span></button>
 
             <p style={{ fontSize: "15px", margin: "0", width: "100%" }}>Check your email for the verification code</p>
           </div>
