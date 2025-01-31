@@ -13,20 +13,18 @@ import Loading from "../../pages/Loading.js";
 function Login() {
 
   const auth = useContext(AuthContext);
-  const { request, error, clearError } = useHttp();
+  const { request, error, clearError, loading } = useHttp();
 
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [visible, setVisible] = useState(false);
   
   const login = async (e) => {
     e.preventDefault();
     try {
-      setLoading(true);
       const response = await request("/user/login", "POST", { email, password });
       if (response) {
-        setLoading(false);
         auth.login(response.token, response.userId);
         navigate("/account");
       }
@@ -35,10 +33,8 @@ function Login() {
 
   const googleAccount = async (credential) => {
     try {
-      setLoading(true);
       const response = await request("/user/google-account", "POST", { credential });
       if (response) {
-        setLoading(false);
         auth.login(response.token, response.userId);
         navigate("/account");
       }
@@ -63,8 +59,13 @@ function Login() {
             </div>
 
             <div className="input-container">
-              <input name="password" type="password" onChange={(e) => setPassword(e.target.value)} required/>
+              <input name="password" type={visible ? "text" : "password"} onChange={(e) => setPassword(e.target.value)} required/>
               <label htmlFor="input">Password</label>
+              <span
+                className="toggle-visibility"
+                onClick={() => setVisible(!visible)}
+                title={visible ? "Hide Password" : "Show Password"}
+              >{visible ? "🙈" : "👁️"}</span>
             </div>
 
             <div className="header" style={{ textAlign: "center", marginTop: "-15px", justifyContent: "space-between", display: "flex" }}>

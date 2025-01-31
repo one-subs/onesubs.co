@@ -12,14 +12,13 @@ import Loading from "../../pages/Loading.js";
 function Verification() {
 
   const auth = useContext(AuthContext);
-  const { request, error, clearError } = useHttp();
+  const { request, error, clearError, loading } = useHttp();
 
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [verification, setVerification] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [loading, setLoading] = useState(false);
   const timeoutRef = useRef(null);
 
   useEffect(() => {
@@ -30,10 +29,8 @@ function Verification() {
   const verify = async (e) => {
     e.preventDefault();
     try {
-      setLoading(true);
       const response = await request("/user/verification", "POST", { email, verification, password });
       if (response) {
-        setLoading(false);
         auth.login(response.token, response.userId);
         navigate("/account");
       };

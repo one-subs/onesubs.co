@@ -177,6 +177,18 @@
     position: relative;
     margin-bottom: 20px;
 }
+
+.user .form .toggle-visibility {
+  position: absolute;
+  float: right;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #444444;
+  transition: color 0.3s;
+}
   
 .user .form textarea {
     width: 300px;

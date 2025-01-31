@@ -10,19 +10,16 @@ import Loading from "../../pages/Loading.js";
 
 function CreateAccount() {
 
-  const { request, error, clearError } = useHttp();
+  const { request, error, clearError, loading } = useHttp();
 
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
 
   const create = async (e) => {
     e.preventDefault();
     try {
-      setLoading(true);
       const response = await request("/user/registration", "POST", { email });
       if (response) {
-        setLoading(false);
         navigate(`/account/verification?email=${ email }`);
       }
     } catch (err) {}
