@@ -46,7 +46,7 @@ function Landing() {
                 </div>
                 {isMobile ? "" : <div className="banner">
                     <div data-aos="fade-left" data-aos-duration="1500">
-                        <Link to="/account">
+                        <Link to="/account" style={{ textDecoration: 'none' }}>
                             <div className="card">
                                 <div className="card-content">
                                     <p className="card-title">save your money!</p>
