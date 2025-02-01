@@ -41,17 +41,19 @@ function Landing() {
                                 </div>
                             </div>
                         </div>
-                        <Link to="/account"><button className='start_button'>Sign up for early access!</button></Link>
+                        <Link to="/account/create-account"><button className='start_button'>Sign up for early access!</button></Link>
                     </div>
                 </div>
                 {isMobile ? "" : <div className="banner">
                     <div data-aos="fade-left" data-aos-duration="1500">
-                        <div className="card">
-                            <div className="card-content">
-                                <p className="card-title">save your money!</p>
-                                <p className="card-para">Get access with one subscription card for multiple services.</p>
+                        <Link to="/account">
+                            <div className="card">
+                                <div className="card-content">
+                                    <p className="card-title">save your money!</p>
+                                    <p className="card-para">Get access with one subscription card for multiple services.</p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>}
             </div>
