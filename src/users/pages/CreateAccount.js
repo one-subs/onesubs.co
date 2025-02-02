@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import useHttp from "../../hooks/http.hook";
 
@@ -50,6 +50,11 @@ function CreateAccount() {
             
             <button onClick={(e) => create(e)} style={{ margin: "0px" }}><span>Create</span></button>
 
+            <div className="header" style={{ textAlign: 'center', marginTop: '15px' }}>
+              <Link to="/account" style={{ textDecoration: 'none', color: '#2174ea' }}>
+                <span style={{ fontSize: '17px' }}>Already have an account</span>
+              </Link>
+            </div>
           </div>
         </div>
 
